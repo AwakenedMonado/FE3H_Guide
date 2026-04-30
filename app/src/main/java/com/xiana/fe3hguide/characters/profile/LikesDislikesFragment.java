@@ -21,7 +21,7 @@ import com.xiana.fe3hguide.adapters.LikesDislikesItemsAdapter;
 
 import java.util.ArrayList;
 
-import devlight.io.library.ntb.NavigationTabBar;
+import com.gigamole.navigationtabbar.ntb.NavigationTabBar;
 
 
 public class LikesDislikesFragment extends Fragment {

@@ -12,3 +12,12 @@
 /captures
 .externalNativeBuild
 .cxx
+# Claude Code memory
+.claude/
+# Local IDE state
+/.idea/deploymentTargetSelector.xml
+/.idea/deviceManager.xml
+/.idea/appInsightsSettings.xml
+# Exported conversation files
+*.txt
+!app/src/main/res/raw/*.txt

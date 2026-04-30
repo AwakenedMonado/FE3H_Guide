@@ -23,9 +23,7 @@ import java.io.InputStreamReader;
 public class AboutFragment extends Fragment {
 
     private TextView aboutInfo;
-    private TextView twitterAccount;
     private TextView disclaimer;
-
     private TextView fireEmblemFandom;
     private TextView fireEmblemWiki;
     private TextView fe3h;
@@ -43,126 +41,80 @@ public class AboutFragment extends Fragment {
         return layout;
     }
 
-    private void initComponents(ScrollView layout){
-        twitterAccount = (TextView) layout.findViewById(R.id.twitter_account);
-        disclaimer = (TextView) layout.findViewById(R.id.text_disclaimer);
+    private void initComponents(ScrollView layout) {
         aboutInfo = (TextView) layout.findViewById(R.id.text_about_info);
-
+        disclaimer = (TextView) layout.findViewById(R.id.text_disclaimer);
         fireEmblemFandom = (TextView) layout.findViewById(R.id.fire_emblem_fandom);
         fireEmblemWiki = (TextView) layout.findViewById(R.id.fire_emblem_wiki);
         fe3h = (TextView) layout.findViewById(R.id.fe3hcom);
     }
 
-    private void setUpComponents(){
-        // Set "About" as the text in the toolbar
+    private void setUpComponents() {
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.nav_about));
-
         setUpAboutInfo();
         setUpDisclaimer();
     }
 
-    private void setUpAboutInfo(){
-        String line = null;
+    private void setUpAboutInfo() {
         aboutInfo.setText("");
         InputStream is = getResources().openRawResource(R.raw.about_text);
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         try {
+            String line;
             while ((line = reader.readLine()) != null) {
                 aboutInfo.append(line + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            try { reader.close(); } catch (IOException e) { e.printStackTrace(); }
         }
     }
 
-    private void setUpDisclaimer(){
-        String line = null;
+    private void setUpDisclaimer() {
         disclaimer.setText("");
         InputStream is = getResources().openRawResource(R.raw.disclaimer);
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         try {
+            String line;
             while ((line = reader.readLine()) != null) {
                 disclaimer.append(line + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            try { reader.close(); } catch (IOException e) { e.printStackTrace(); }
         }
     }
 
-    private void addListeners(){
-        // Fire Emblem Wiki - Fandom link
+    private void addListeners() {
         fireEmblemFandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("https://fireemblem.fandom.com/wiki/Fire_Emblem_Wiki")));
-                } catch(Exception e){
-                    Snackbar.make(view, "Could not open link", Snackbar.LENGTH_LONG)
-                            .setAction("Could not open link", null).show();
-                }
+                openUrl(view, "https://fireemblem.fandom.com/wiki/Fire_Emblem_Wiki");
             }
         });
 
-        // Fire Emblem Wiki
         fireEmblemWiki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("https://fireemblemwiki.org/wiki/Main_Page")));
-                } catch(Exception e){
-                    Snackbar.make(view, "Could not open link", Snackbar.LENGTH_LONG)
-                            .setAction("Could not open link", null).show();
-                }
+                openUrl(view, "https://fireemblemwiki.org/wiki/Main_Page");
             }
         });
 
-        // FE3H.com
         fe3h.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("https://fe3h.com/")));
-                } catch(Exception e){
-                    Snackbar.make(view, "Could not open link", Snackbar.LENGTH_LONG)
-                            .setAction("Could not open link", null).show();
-                }
+                openUrl(view, "https://fe3h.com/");
             }
         });
+    }
 
-
-        // Twitter link
-        twitterAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    Intent intent = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("twitter://user?user_id=1026922462607495171"));
-                    startActivity(intent);
-                } catch (Exception e){
-                    try {
-                        startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://twitter.com/Kinai_24")));
-                    } catch (Exception ex){
-                        Snackbar.make(view, "Could not open link", Snackbar.LENGTH_LONG)
-                                .setAction("Could not open link", null).show();
-                    }
-                }
-            }
-        });
+    private void openUrl(View view, String url) {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+        } catch (Exception e) {
+            Snackbar.make(view, "Could not open link", Snackbar.LENGTH_LONG).show();
+        }
     }
 }

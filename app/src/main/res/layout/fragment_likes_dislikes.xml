@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/navigation_tab_bar_likes_dislikes"/>
 
-    <devlight.io.library.ntb.NavigationTabBar
+    <com.gigamole.navigationtabbar.ntb.NavigationTabBar
         android:id="@+id/navigation_tab_bar_likes_dislikes"
         android:layout_width="match_parent"
         android:layout_height="60dp"

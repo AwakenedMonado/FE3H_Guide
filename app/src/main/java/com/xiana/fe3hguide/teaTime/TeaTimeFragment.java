@@ -32,7 +32,7 @@ import com.xiana.fe3hguide.model.TeaTimeInfo;
 import java.util.ArrayList;
 import java.util.List;
 
-import devlight.io.library.ntb.NavigationTabBar;
+import com.gigamole.navigationtabbar.ntb.NavigationTabBar;
 import gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner;
 import gr.escsoft.michaelprimez.searchablespinner.interfaces.OnItemSelectedListener;
 

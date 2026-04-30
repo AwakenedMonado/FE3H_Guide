@@ -1,7 +1,3 @@
-Thank you for downloading the FE3H Guide app!
+FE3H Guide is a fan-made companion app for Fire Emblem: Three Houses.
 
-Any feedback is well received, so feel free to send me any questions, reviews, suggestions, etc. that you may have.
-My Twitter MD's are open and I will be happy to help with any problem related to the app!
-
-Developer: Xiana Carrera Alonso
-Email: xiana.carrera.alonso@gmail.com
+Originally developed by Xiana Carrera Alonso. This version is a community-maintained fork with continued improvements and new features.
