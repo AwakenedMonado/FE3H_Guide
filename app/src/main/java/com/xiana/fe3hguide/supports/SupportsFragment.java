@@ -156,6 +156,15 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
 
                     // Shows the button
                     buttonSeeSupports.setVisibility(View.VISIBLE);
+
+                    // Hide stale results from a previous pair
+                    supportOptions.setVisibility(View.INVISIBLE);
+                    cSupport = null;
+                    bSupport = null;
+                    aSupport = null;
+                    interSupport = null;
+                    interRank = null;
+                    sSupport = null;
                 }
 
                 @Override
@@ -257,17 +266,14 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
                     return;
                 }
 
-                // name1 must be before name2 following alphabetical order
-                // name1 and name2 are copied into new variables so as to never change the order
-                // of the attributes themselves, and only swap the local variables
                 String char1 = name1;
                 String char2 = name2;
-                // Byleth must always be the second character
-                if (char1.contains("Byleth")){
+                // Byleth is always stored second in the database
+                if (char1.contains("Byleth")) {
                     String temp = char1;
                     char1 = char2;
                     char2 = temp;
-                } else if (char1.compareTo(char2) > 0) {            // Swap
+                } else if (!char2.contains("Byleth") && char1.compareTo(char2) > 0) {
                     String temp = char1;
                     char1 = char2;
                     char2 = temp;

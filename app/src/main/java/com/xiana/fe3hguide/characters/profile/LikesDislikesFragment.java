@@ -28,13 +28,18 @@ public class LikesDislikesFragment extends Fragment {
 
     private final String character;
     private final SQLiteDatabase db;
+    private final boolean showMeals;
     private NavigationTabBar navigationTabBar;
     private ViewPager viewPager;
 
+    public LikesDislikesFragment(String character, SQLiteDatabase db) {
+        this(character, db, true);
+    }
 
-    public LikesDislikesFragment(String character, SQLiteDatabase db){
+    public LikesDislikesFragment(String character, SQLiteDatabase db, boolean showMeals) {
         this.character = character;
         this.db = db;
+        this.showMeals = showMeals;
     }
 
     @Override
@@ -60,7 +65,7 @@ public class LikesDislikesFragment extends Fragment {
         viewPager.setAdapter(new PagerAdapter() {
             @Override
             public int getCount() {
-                return 3;
+                return showMeals ? 3 : 2;
             }
 
             @Override
@@ -76,21 +81,35 @@ public class LikesDislikesFragment extends Fragment {
             @Override
             public Object instantiateItem(final ViewGroup container, final int position) {
                 View view = null;
-                switch (position){
-                    case 1:
-                        view = LayoutInflater.from(
-                                getContext()).inflate(R.layout.meals, null, false);
-                        prepareRecyclerViewsMeals(view);
-                        break;
-                    case 2:
-                        view = LayoutInflater.from(
-                                getContext()).inflate(R.layout.lost_items, null, false);
-                        prepareRecyclerLostItems(view);
-                        break;
-                    default:
-                        view = LayoutInflater.from(
-                                getContext()).inflate(R.layout.gifts, null, false);
-                        prepareRecyclerViewsGifts(view);
+                if (showMeals) {
+                    switch (position) {
+                        case 1:
+                            view = LayoutInflater.from(
+                                    getContext()).inflate(R.layout.meals, null, false);
+                            prepareRecyclerViewsMeals(view);
+                            break;
+                        case 2:
+                            view = LayoutInflater.from(
+                                    getContext()).inflate(R.layout.lost_items, null, false);
+                            prepareRecyclerLostItems(view);
+                            break;
+                        default:
+                            view = LayoutInflater.from(
+                                    getContext()).inflate(R.layout.gifts, null, false);
+                            prepareRecyclerViewsGifts(view);
+                    }
+                } else {
+                    switch (position) {
+                        case 1:
+                            view = LayoutInflater.from(
+                                    getContext()).inflate(R.layout.lost_items, null, false);
+                            prepareRecyclerLostItems(view);
+                            break;
+                        default:
+                            view = LayoutInflater.from(
+                                    getContext()).inflate(R.layout.gifts, null, false);
+                            prepareRecyclerViewsGifts(view);
+                    }
                 }
 
                 container.addView(view);
@@ -118,17 +137,19 @@ public class LikesDislikesFragment extends Fragment {
                 ).title("Gifts")
                 .build()
         );
-        models.add(
-                new NavigationTabBar.Model.Builder(
-                        getResources().getDrawable(R.drawable.meals),
-                        navTabColors.get(1)
-                ).title("Meals")
-                .build()
-        );
+        if (showMeals) {
+            models.add(
+                    new NavigationTabBar.Model.Builder(
+                            getResources().getDrawable(R.drawable.meals),
+                            navTabColors.get(1)
+                    ).title("Meals")
+                    .build()
+            );
+        }
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.lost_items),
-                        navTabColors.get(2)
+                        navTabColors.get(showMeals ? 2 : 1)
                 ).title("Lost items")
                 .build()
         );

@@ -47,7 +47,8 @@ public class ProfileActivity extends AppCompatActivity {
         }
 
         // Attach a TabsPagerAdapter to the ViewPager
-        SwipePagerAdapter pagerAdapter = new SwipePagerAdapter(getSupportFragmentManager());
+        boolean isPlayable = !character.equals("Rhea");
+        SwipePagerAdapter pagerAdapter = new SwipePagerAdapter(getSupportFragmentManager(), isPlayable);
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(pagerAdapter);
 
@@ -59,46 +60,52 @@ public class ProfileActivity extends AppCompatActivity {
 
     private class SwipePagerAdapter extends FragmentPagerAdapter {
 
-        public SwipePagerAdapter(FragmentManager fm) {
+        private final boolean isPlayable;
+
+        public SwipePagerAdapter(FragmentManager fm, boolean isPlayable) {
             super(fm);
+            this.isPlayable = isPlayable;
         }
 
         @Override
-        public int getCount(){
-            return 5;
+        public int getCount() {
+            return isPlayable ? 5 : 2;
         }
 
         @Override
         public Fragment getItem(int position) {
-            switch (position) {
-                case 0:
-                    return new GeneralFragment(character, db);
-                case 1:
-                    return new AbilitiesFragment(character, db);
-                case 2:
-                    return new MagicFragment(character, db);
-                case 3:
-                    return new CombatArtsFragment(character, db);
-                case 4:
-                    return new LikesDislikesFragment(character, db);
+            if (isPlayable) {
+                switch (position) {
+                    case 0: return new GeneralFragment(character, db);
+                    case 1: return new AbilitiesFragment(character, db);
+                    case 2: return new MagicFragment(character, db);
+                    case 3: return new CombatArtsFragment(character, db);
+                    case 4: return new LikesDislikesFragment(character, db);
+                }
+            } else {
+                switch (position) {
+                    case 0: return new GeneralFragment(character, db);
+                    case 1: return new LikesDislikesFragment(character, db, false);
+                }
             }
             return null;
         }
 
         @Override
-        // Adds the title corresponding to each of the tabs
         public CharSequence getPageTitle(int position) {
-            switch (position){
-                case 0:
-                    return getResources().getText(R.string.title_general_tab);
-                case 1:
-                    return getResources().getText(R.string.title_abilities_tab);
-                case 2:
-                    return getResources().getText(R.string.title_magic_tab);
-                case 3:
-                    return getResources().getText(R.string.combat_arts_tab);
-                case 4:
-                    return getResources().getText(R.string.likes_dislikes_tab);
+            if (isPlayable) {
+                switch (position) {
+                    case 0: return getResources().getText(R.string.title_general_tab);
+                    case 1: return getResources().getText(R.string.title_abilities_tab);
+                    case 2: return getResources().getText(R.string.title_magic_tab);
+                    case 3: return getResources().getText(R.string.combat_arts_tab);
+                    case 4: return getResources().getText(R.string.likes_dislikes_tab);
+                }
+            } else {
+                switch (position) {
+                    case 0: return getResources().getText(R.string.title_general_tab);
+                    case 1: return getResources().getText(R.string.likes_dislikes_tab);
+                }
             }
             return null;
         }

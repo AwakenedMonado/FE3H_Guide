@@ -6,6 +6,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/navigation_view_dark</item>
+    </style>
+
     <style name="heading_title">
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">36sp</item>

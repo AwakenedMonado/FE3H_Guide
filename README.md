@@ -1,4 +1,4 @@
-# WORK IN PROGRESS
+# FE3H Guide Revamped
 
 This project was originally developed by  xianacarrera as a FE3H companion app several years ago. I happened to stumble upon it and enjoyed what it offered, while simultaneously wishing it had several other features to check about the game. 
 

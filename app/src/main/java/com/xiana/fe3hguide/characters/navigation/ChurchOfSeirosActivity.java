@@ -62,6 +62,7 @@ public class ChurchOfSeirosActivity extends AppCompatActivity {
     private ArrayList<String> createChurchOfSeirosNames(){
         // For simplicity and speed purposes, the names are hardcoded
         ArrayList<String> churchOfSeirosNames = new ArrayList<>();
+        churchOfSeirosNames.add("Rhea");
         churchOfSeirosNames.add("Seteth");
         churchOfSeirosNames.add("Flayn");
         churchOfSeirosNames.add("Hanneman");
@@ -79,6 +80,7 @@ public class ChurchOfSeirosActivity extends AppCompatActivity {
     private ArrayList<Integer> createChurchOfSeirosImages(){
         // For simplicity and speed purposes, the images are hardcoded
         ArrayList<Integer> churchOfSeirosImages = new ArrayList<>();
+        churchOfSeirosImages.add(R.drawable.ic_rhea);
         churchOfSeirosImages.add(R.drawable.ic_seteth);
         churchOfSeirosImages.add(R.drawable.ic_flayn);
         churchOfSeirosImages.add(R.drawable.ic_hanneman);

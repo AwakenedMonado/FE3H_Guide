@@ -87,7 +87,8 @@ public class DAOSupports extends DAO {
                 "sup.aSupport, sup.interSupport, sup.interRank, sup.sSupport " +
                 "FROM Characters AS c1, Supports AS sup, Characters AS c2 " +
                 "WHERE sup.character1 = c1._id AND sup.character2 = c2._id AND " +
-                "c1.name = ? AND c2.name = ?", new String[]{characterName1, characterName2});
+                "((c1.name = ? AND c2.name = ?) OR (c1.name = ? AND c2.name = ?))",
+                new String[]{characterName1, characterName2, characterName2, characterName1});
 
         ArrayList<String> supports = null;
 
