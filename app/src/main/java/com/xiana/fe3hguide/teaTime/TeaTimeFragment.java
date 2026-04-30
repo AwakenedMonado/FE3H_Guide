@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.xiana.fe3hguide.DropdownDismissible;
 import com.xiana.fe3hguide.R;
 import com.xiana.fe3hguide.adapters.FinalConversationsAdapter;
 import com.xiana.fe3hguide.adapters.TopicsExpandableListAdapter;
@@ -39,7 +40,7 @@ import gr.escsoft.michaelprimez.searchablespinner.interfaces.OnItemSelectedListe
 
 
 public class TeaTimeFragment extends Fragment
-        implements View.OnClickListener {
+        implements View.OnClickListener, DropdownDismissible {
 
     private final Facade fc;
 
@@ -226,6 +227,19 @@ public class TeaTimeFragment extends Fragment
 
             }
         });
+    }
+
+    @Override
+    public void dismissDropdowns() {
+        if (searchCharacter != null) {
+            searchCharacter.hideEdit();
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        dismissDropdowns();
     }
 
     @Override

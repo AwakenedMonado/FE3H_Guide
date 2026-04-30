@@ -18,6 +18,9 @@
 /.idea/deploymentTargetSelector.xml
 /.idea/deviceManager.xml
 /.idea/appInsightsSettings.xml
+/.idea/AndroidProjectSystem.xml
+/.idea/markdown.xml
+/.idea/migrations.xml
 # Exported conversation files
 *.txt
 !app/src/main/res/raw/*.txt

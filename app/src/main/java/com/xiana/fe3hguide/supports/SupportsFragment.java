@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 
+import com.xiana.fe3hguide.DropdownDismissible;
 import com.xiana.fe3hguide.R;
 import com.xiana.fe3hguide.adapters.SimpleListAdapter;
 import com.xiana.fe3hguide.database.Facade;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
 import gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner;
 import gr.escsoft.michaelprimez.searchablespinner.interfaces.OnItemSelectedListener;
 
-public class SupportsFragment extends Fragment implements View.OnClickListener {
+public class SupportsFragment extends Fragment implements View.OnClickListener, DropdownDismissible {
 
     private Facade fc;
     private ImageView icon1, icon2;
@@ -232,6 +233,18 @@ public class SupportsFragment extends Fragment implements View.OnClickListener {
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+    }
+
+    @Override
+    public void dismissDropdowns() {
+        if (character1 != null) character1.hideEdit();
+        if (character2 != null) character2.hideEdit();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        dismissDropdowns();
     }
 
     @Override

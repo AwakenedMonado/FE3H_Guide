@@ -88,7 +88,12 @@ public class MainActivity extends AppCompatActivity
             }
 
             @Override
-            public void onDrawerOpened(@NonNull View drawerView) {}
+            public void onDrawerOpened(@NonNull View drawerView) {
+                Fragment current = getSupportFragmentManager().findFragmentById(R.id.content_frame);
+                if (current instanceof DropdownDismissible) {
+                    ((DropdownDismissible) current).dismissDropdowns();
+                }
+            }
 
             @Override
             public void onDrawerClosed(@NonNull View drawerView) {
