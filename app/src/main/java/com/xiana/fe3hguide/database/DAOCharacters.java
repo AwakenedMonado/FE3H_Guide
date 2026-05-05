@@ -63,7 +63,7 @@ public class DAOCharacters extends DAO {
 
     public List<Ability> getAllAbilities(){
         Cursor cursor = db.rawQuery("SELECT * " +
-                        "FROM Abilities WHERE type NOT LIKE ?",
+                        "FROM Abilities WHERE type NOT LIKE ? ORDER BY ability",
                 new String[] {"%Unique%"});
 
         ArrayList<Ability> abilities = new ArrayList();
@@ -85,7 +85,7 @@ public class DAOCharacters extends DAO {
 
     public List<Ability> getSkillLevelAbilities(){
         Cursor cursor = db.rawQuery("SELECT * " +
-                        "FROM Abilities WHERE type LIKE ? AND type NOT LIKE ?",
+                        "FROM Abilities WHERE type LIKE ? AND type NOT LIKE ? ORDER BY ability",
                 new String[] {"%Learned%", "%Unique%"});
 
         ArrayList<Ability> abilities = new ArrayList();
@@ -107,7 +107,7 @@ public class DAOCharacters extends DAO {
 
     public List<Ability> getClassAbilities(){
         Cursor cursor = db.rawQuery("SELECT * " +
-                "FROM Abilities WHERE type LIKE ?", new String[] {"%Class%"});
+                "FROM Abilities WHERE type LIKE ? ORDER BY ability", new String[] {"%Class%"});
 
         ArrayList<Ability> abilities = new ArrayList();
         if (cursor.moveToFirst()){
@@ -128,7 +128,7 @@ public class DAOCharacters extends DAO {
 
     public List<Ability> getClassMasteryAbilities(){
         Cursor cursor = db.rawQuery("SELECT * " +
-                "FROM abilities WHERE type LIKE ?", new String[] {"%Master%"});
+                "FROM Abilities WHERE type LIKE ? ORDER BY ability", new String[] {"%Master%"});
 
         ArrayList<Ability> abilities = new ArrayList();
         if (cursor.moveToFirst()){
@@ -149,7 +149,7 @@ public class DAOCharacters extends DAO {
 
     public List<Ability> getOtherAbilities(){
         Cursor cursor = db.rawQuery("SELECT * " +
-                "FROM Abilities WHERE type LIKE ?", new String[] {"%Other%"});
+                "FROM Abilities WHERE type LIKE ? ORDER BY ability", new String[] {"%Other%"});
 
         ArrayList<Ability> abilities = new ArrayList();
         if (cursor.moveToFirst()){

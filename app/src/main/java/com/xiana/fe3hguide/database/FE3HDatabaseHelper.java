@@ -18,7 +18,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
 
     private final Context context;
     private static final String DB_NAME = "fe3h";       // name of the database
-    private static final int DB_VERSION = 1;            // version of the database
+    private static final int DB_VERSION = 4;            // version of the database
 
     public FE3HDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -40,10 +40,23 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         createTopicsTable(db);
         createFinalConversationsTable(db);
         createSupportsTable(db);
+        createGambitsTable(db);
+        createBattalionsTable(db);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        if (oldVersion < 2) {
+            createGambitsTable(db);
+        }
+        if (oldVersion < 3) {
+            db.execSQL("DROP TABLE IF EXISTS Battalions");
+            createBattalionsTable(db);
+        }
+        if (oldVersion < 4) {
+            db.execSQL("DROP TABLE IF EXISTS Battalions");
+            createBattalionsTable(db);
+        }
     }
 
     private void createCharactersTable(SQLiteDatabase db) {
@@ -2701,6 +2714,90 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 String[] parts = line.split(Pattern.quote("_"));
                 insertSupport(db, parts[0], parts[1], parts[2], parts[3], parts[4],
                         parts[5], parts[6], parts[7]);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void createGambitsTable(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE Gambits ( "
+                + "name TEXT PRIMARY KEY, "
+                + "type TEXT, "
+                + "mt TEXT, "
+                + "hit TEXT, "
+                + "range TEXT, "
+                + "description TEXT, "
+                + "formation TEXT);");
+
+        String line = null;
+        InputStream is = context.getResources().openRawResource(R.raw.gambits);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+                String[] parts = line.split("_");
+                // parts[6] + "_" + parts[7] = formation image name (e.g. "formation_cross")
+                String formation = parts[6] + "_" + parts[7];
+                ContentValues values = new ContentValues();
+                values.put("name", parts[0]);
+                values.put("type", parts[1]);
+                values.put("mt", parts[2]);
+                values.put("hit", parts[3]);
+                values.put("range", parts[4]);
+                values.put("description", parts[5]);
+                values.put("formation", formation);
+                db.insert("Gambits", null, values);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void createBattalionsTable(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE Battalions ( "
+                + "name TEXT PRIMARY KEY, "
+                + "authorityLevel TEXT, "
+                + "endurance TEXT, "
+                + "prt TEXT, "
+                + "rsl TEXT, "
+                + "hit TEXT, "
+                + "avo TEXT, "
+                + "cha TEXT, "
+                + "gambit TEXT, "
+                + "movementType TEXT);");
+
+        String line = null;
+        InputStream is = context.getResources().openRawResource(R.raw.battalions);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+                String[] parts = line.split("_");
+                ContentValues values = new ContentValues();
+                values.put("name", parts[0]);
+                values.put("authorityLevel", parts[1]);
+                values.put("endurance", parts[2]);
+                values.put("prt", parts[3]);
+                values.put("rsl", parts[4]);
+                values.put("hit", parts[5]);
+                values.put("avo", parts[6]);
+                values.put("cha", parts[7]);
+                values.put("gambit", parts[8]);
+                values.put("movementType", parts[9]);
+                db.insert("Battalions", null, values);
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -19,6 +19,8 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.xiana.fe3hguide.abilities.AbilitiesMainFragment;
+import com.xiana.fe3hguide.battalions.BattalionsFragment;
 import com.xiana.fe3hguide.characters.navigation.CharactersFragment;
 import com.xiana.fe3hguide.classes.ClassesFragment;
 import com.xiana.fe3hguide.database.Facade;
@@ -119,6 +121,10 @@ public class MainActivity extends AppCompatActivity
             fragment = new TeaTimeFragment(fc);
         } else if (id == R.id.nav_supports) {
             fragment = new SupportsFragment(fc);
+        } else if (id == R.id.nav_battalions) {
+            fragment = new BattalionsFragment(fc);
+        } else if (id == R.id.nav_abilities) {
+            fragment = new AbilitiesMainFragment(fc);
         } else if (id == R.id.nav_settings) {
             fragment = new SettingsFragment();
         } else if (id == R.id.nav_about) {
@@ -146,14 +152,14 @@ public class MainActivity extends AppCompatActivity
             navigationView.setBackgroundColor(getResources().getColor(R.color.elevation1));
             navigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
             navigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.light_gray)));
-            setTextColorForMenuItem(navigationView.getMenu().getItem(5), R.color.white);
+            setTextColorForMenuItem(navigationView.getMenu().getItem(7), R.color.white);
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
             navigationView.setBackgroundColor(getResources().getColor(R.color.mainBackground));
             navigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.mainText)));
             navigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.mainText)));
-            setTextColorForMenuItem(navigationView.getMenu().getItem(5), R.color.mainText);
+            setTextColorForMenuItem(navigationView.getMenu().getItem(7), R.color.mainText);
         }
     }
 
@@ -176,6 +182,10 @@ public class MainActivity extends AppCompatActivity
             fragment = new TeaTimeFragment(fc);
         } else if (defaultFragment == 4) {
             fragment = new SupportsFragment(fc);
+        } else if (defaultFragment == 5) {
+            fragment = new BattalionsFragment(fc);
+        } else if (defaultFragment == 6) {
+            fragment = new AbilitiesMainFragment(fc);
         } else {
             fragment = new CharactersFragment();
         }

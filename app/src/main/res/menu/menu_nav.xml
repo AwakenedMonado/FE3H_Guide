@@ -29,6 +29,16 @@
             android:icon="@drawable/ic_supports"
             android:title="@string/nav_supports" />
 
+        <item
+            android:id="@+id/nav_battalions"
+            android:icon="@drawable/ic_menu_battalions"
+            android:title="@string/nav_battalions" />
+
+        <item
+            android:id="@+id/nav_abilities"
+            android:icon="@drawable/ic_menu_abilities"
+            android:title="@string/nav_abilities" />
+
         <item android:title="@string/nav_secondary_group">
             <menu>
                 <group android:checkableBehavior="single">

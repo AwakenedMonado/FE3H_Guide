@@ -5,9 +5,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.xiana.fe3hguide.model.Ability;
+import com.xiana.fe3hguide.model.Battalion;
 import com.xiana.fe3hguide.model.Character;
 import com.xiana.fe3hguide.model.CombatArt;
 import com.xiana.fe3hguide.model.CombatArtClassMastery;
+import com.xiana.fe3hguide.model.Gambit;
 import com.xiana.fe3hguide.model.InGameClass;
 import com.xiana.fe3hguide.model.Spell;
 import com.xiana.fe3hguide.model.TeaTimeInfo;
@@ -25,6 +27,7 @@ public class Facade {
     private static DAOClasses daoClasses;
     private static DAOSupports daoSupports;
     private static DAOTeaTime daoTeaTime;
+    private static DAOBattalions daoBattalions;
 
     private Facade(){
     }
@@ -39,6 +42,7 @@ public class Facade {
             daoCharacters = new DAOCharacters(db);
             daoSupports = new DAOSupports(db);
             daoTeaTime = new DAOTeaTime(db);
+            daoBattalions = new DAOBattalions(db);
 
             instance = new Facade();
         }
@@ -124,6 +128,13 @@ public class Facade {
     public ArrayList<String> searchSupports(String characterName1, String characterName2){
         return daoSupports.searchSupports(characterName1, characterName2);
     }
+
+    /** DAOBattalions methods **/
+    public List<Battalion> getBattalions() { return daoBattalions.getBattalions(); }
+
+    public Battalion getBattalion(String name) { return daoBattalions.getBattalion(name); }
+
+    public Gambit getGambit(String name) { return daoBattalions.getGambit(name); }
 
     /** DAOTeaTime methods **/
     public ArrayList<String> getAllNamesButByleth(){

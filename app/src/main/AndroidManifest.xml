@@ -9,6 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.xiana.fe3hguide.classes.InGameClassActivity" android:exported="false"></activity>
+        <activity android:name="com.xiana.fe3hguide.battalions.BattalionDetailActivity" android:exported="false"></activity>
         <activity android:name="com.xiana.fe3hguide.characters.profile.ProfileActivity" android:exported="false" />
         <activity android:name="com.xiana.fe3hguide.characters.navigation.ChurchOfSeirosActivity" android:exported="false" />
         <activity android:name="com.xiana.fe3hguide.characters.navigation.AshenWolvesActivity" android:exported="false" />

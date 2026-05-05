@@ -112,7 +112,7 @@ public class SettingsFragment extends Fragment {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                 builder.setTitle("Choose the default tab shown when opening the app");
                 final String[] tabs = {"Characters", "Calculator", "Classes", "Tea time",
-                "Supports"};
+                "Supports", "Battalions", "Abilities"};
 
                 // Each item is a tab option
                 builder.setItems(tabs, new DialogInterface.OnClickListener() {
@@ -147,13 +147,13 @@ public class SettingsFragment extends Fragment {
             navigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.light_gray)));
 
             // Change color of "Options" string
-            setTextColorForMenuItem(navigationView.getMenu().getItem(5), R.color.white);
+            setTextColorForMenuItem(navigationView.getMenu().getItem(7), R.color.white);
         } else {
             toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
             navigationView.setBackgroundColor(getResources().getColor(R.color.mainBackground));
             navigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.mainText)));
             navigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.mainText)));
-            setTextColorForMenuItem(navigationView.getMenu().getItem(5), R.color.mainText);
+            setTextColorForMenuItem(navigationView.getMenu().getItem(7), R.color.mainText);
         }
     }
 

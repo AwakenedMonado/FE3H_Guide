@@ -20,13 +20,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.xiana.fe3hguide.R;
+import com.xiana.fe3hguide.abilities.AbilityPopupHost;
 import com.xiana.fe3hguide.adapters.AbilitiesAdapter;
 import com.xiana.fe3hguide.database.Facade;
 import com.xiana.fe3hguide.model.Ability;
 
 import java.util.List;
 
-public class AbilitiesFragment extends Fragment {
+public class AbilitiesFragment extends Fragment implements AbilityPopupHost {
 
     private final String character;
     private final SQLiteDatabase db;
@@ -176,7 +177,8 @@ public class AbilitiesFragment extends Fragment {
         });
     }
 
-    public void shopPopup(Ability ability) {
+    @Override
+    public void showAbilityPopup(Ability ability) {
         // Set the name of the ability as the title for the popup
         titleAbilityName.setText(ability.getName());
 

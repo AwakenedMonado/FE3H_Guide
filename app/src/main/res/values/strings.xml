@@ -154,4 +154,27 @@
     <string name="enable_dark_mode">Enable Dark Mode</string>
     <string name="choose_home">Select default tab</string>
 
+    <string name="nav_battalions">Battalions</string>
+    <string name="nav_abilities">Abilities</string>
+    <string name="endurance">Endurance</string>
+    <string name="prt">Prt</string>
+    <string name="rsl">Rsl</string>
+    <string name="stat_boosts">Stat Boosts</string>
+    <string name="gambit">Gambit</string>
+    <string name="gambit_type">Gambit type icon</string>
+    <string name="formation_image">Formation diagram</string>
+    <string name="battalion_rank_e">E</string>
+    <string name="battalion_rank_d">D</string>
+    <string name="battalion_rank_c">C</string>
+    <string name="battalion_rank_b">B</string>
+    <string name="battalion_rank_a">A</string>
+    <string name="movement_type">Movement</string>
+    <string name="sort_label">Sort</string>
+    <string-array name="battalion_sort_options">
+        <item>Alphabetical</item>
+        <item>Authority Level</item>
+        <item>Endurance</item>
+        <item>Gambit Might</item>
+    </string-array>
+
 </resources>

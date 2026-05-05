@@ -12,23 +12,23 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.HashMap;
 import java.util.List;
 import com.xiana.fe3hguide.R;
-import com.xiana.fe3hguide.characters.profile.AbilitiesFragment;
+import com.xiana.fe3hguide.abilities.AbilityPopupHost;
 import com.xiana.fe3hguide.model.Ability;
 
 public class AbilitiesAdapter extends
         RecyclerView.Adapter<AbilitiesAdapter.ViewHolderAbilities> {
 
     private List<Ability> abilities;
-    private AbilitiesFragment fragment;
+    private AbilityPopupHost host;
     private HashMap<String, Integer> positions;     // Maps names to positions in abilities
 
-    public AbilitiesAdapter(List<Ability> abilities, AbilitiesFragment fragment){
+    public AbilitiesAdapter(List<Ability> abilities, AbilityPopupHost host){
         this.abilities = abilities;
         positions = new HashMap<>();
         for (int i = 0; i < abilities.size(); i++){
             positions.put(abilities.get(i).getName(), i);
         }
-        this.fragment = fragment;
+        this.host = host;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class AbilitiesAdapter extends
             ViewGroup parent, int viewType){
         ConstraintLayout cv = (ConstraintLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.card_item_w_image, parent, false);
-        return new ViewHolderAbilities(cv, fragment, this);
+        return new ViewHolderAbilities(cv, host, this);
     }
 
     @Override
@@ -68,14 +68,14 @@ public class AbilitiesAdapter extends
     public static class ViewHolderAbilities extends RecyclerView.ViewHolder {
 
         private ConstraintLayout constraintLayout;
-        private AbilitiesFragment fragment;
+        private AbilityPopupHost host;
         private AbilitiesAdapter parent;
 
-        public ViewHolderAbilities(ConstraintLayout v, final AbilitiesFragment fragment,
+        public ViewHolderAbilities(ConstraintLayout v, final AbilityPopupHost host,
                                    final AbilitiesAdapter parent){
             super(v);
             constraintLayout = v;
-            this.fragment = fragment;
+            this.host = host;
             this.parent = parent;
 
             constraintLayout.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +83,7 @@ public class AbilitiesAdapter extends
                 public void onClick(View view) {
                     TextView abilityName = (TextView)
                             constraintLayout.findViewById(R.id.textView_card_title);
-                    fragment.shopPopup(parent.getAbility(abilityName.getText().toString()));
+                    host.showAbilityPopup(parent.getAbility(abilityName.getText().toString()));
                 }
             });
         }

@@ -1,0 +1,38 @@
+Absolute Defense_Support_-_-_1_A rock solid convoy of exceptional maids. Allies within range gain DEF +6. Lasts one turn._formation_cross
+Absorption_Offensive_4_30_1_Recovers HP equal to 50% of the damage dealt to foes in the area._formation_area
+Ashes and Dust_Offensive_12_50_2-3_Rain arrows down on the area. Effective against fliers._formation_area
+Assault Troop_Offensive_10_50_1_Charge attack against foes in the area._formation_wedge
+Assembly_Offensive_4_50_1_Attack that moves unit 1 tile backward and pulls target foe into unit's previous space._formation_single
+Bag of Tricks_Support_-_-_1_Sets Gambit Counter of all allies in the targeted area to 0._formation_single
+Battleground Cafe_Support_-_-_1_Tea served by the best valets. Allies within range gain STR +4. Lasts one turn._formation_cross
+Battleground Clean Up_Offensive_15_40_1_These top-tier servants will clean up the battlefield. Attack foes within range._formation_line
+Blaze_Offensive_10_50_1_Attack that ignites certain terrain in the area into flame._formation_cross
+Blessing_Support_-_-_1_Affected allies can survive lethal damage with 1 HP once, if HP is greater than 1._formation_spread
+Dance of the Goddess_Support_-_-_1_Allies in the area can move again._formation_spread
+Disturbance_Offensive_4_60_1_Attack that rattles foes, preventing them from moving on the next turn._formation_single
+Flash-Fire Arrows_Offensive_7_50_1_Attack that ignites certain terrain in the area into flame. Effective against fliers._formation_wedge
+Fusillade_Offensive_5_50_2-3_Rain arrows down on the area. Effective against flier._formation_spread
+Group Flames_Magic_2_60_1-2_Fire magic that affects a wide area._formation_spread
+Group Ice_Magic_3_50_1-2_Ice magic that affects a wide area._formation_spread
+Group Lance Attack_Offensive_6_50_1_Perform a lance attack in the area._formation_line
+Group Lightning_Magic_4_40_1-2_Lightning magic that affects a wide area._formation_spread
+Impregnable Wall_Support_-_-_1_Allies deal an receive only 1 damage for the rest of the turn._formation_line
+Line of Lances_Offensive_5_50_1_Performs a lance attack in the area. Effective against cavalry._formation_line
+Linked Horses_Offensive_12_50_1_A wide charge of cavalry linked by chains._formation_line
+Lure_Offensive_4_50_1_Attack that moves adjacent foe to the opposite side of unit._formation_single
+Mad Melee_Offensive_4_60_1_Attack foes within range._formation_line
+Onslaught_Offensive_8_50_1_Attack that pushes adjacent foe 1 tile away._formation_single
+Poison Tactic_Offensive_5_60_1_Detonate a toxic barrel to inflict poison on foes in the area._formation_cross
+Poisoned Arrows_Offensive_4_60_2-3_Rain down arrows that inflict poison on foes. Effective against fliers._formation_spread
+Raging Flames_Offensive_15_50_1_Sets certain terrain in the targeted area on fire._formation_single
+Random Shot_Offensive_8_40_1_Damages foes in the targeted area._formation_single
+Recovery Roar_Support_-_-_1_Cure status effects on all allies within range._formation_area
+Resonant Flames_Offensive_6_60_1-2_Damages foes in the targeted area._formation_single
+Resonant Ice_Magic_7_50_1-2_Powerful ice magic that affects a wide area._formation_area
+Resonant Lightning_Magic_8_40_1-2_Powerful lightning magic that affects a wide area._formation_area
+Resonant White Magic_Support_-_-_1_Heal HP of allies in the area._formation_line
+Retribution_Support_-_-_1_Allies can counterattack when they are attacked from outside their usual range for 5 turns._formation_line
+Reversal_Offensive_8_50_1_Attack that causes unit and target to foe to swap spaces._formation_single
+Sacred Shield_Support_-_-_1_Allies receive 0 damage from ranged physical attacks for the rest of the turn._formation_line
+Stride_Support_-_-_1_Allies gain MV +5 until the end of the turn._formation_area
+Wave Attack_Offensive_13_60_1_Performs a lance attack in the area. Effective against armored units._formation_area
