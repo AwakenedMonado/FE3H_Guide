@@ -35,5 +35,5 @@ Bombard_Triggers 2 consecutive hits_Brawl_C+/A_-3_+3_-_-_+10_1
 One-Two Punch_Triggers a follow-up attack_Brawl_C+_-4_+8_+20_-_-_1
 Nimble Combo_2 consecutive hits_Brawl_C+_-3_+4_-_+20_-_1
 Monster Crusher_Effective against Monsters_Brawl_C+_-4_+13_+10_-_+10_1
-Mystic Blow_Deals magic-based magic_Brawl_A_-3_+10_+10_-_-_1
+Mystic Blow_Deals magic-based damage_Brawl_A_-3_+10_+10_-_-_1
 Mighty Blow_-_Brawl_A_-3_+10_-5_-_+20_1

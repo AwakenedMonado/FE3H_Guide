@@ -594,7 +594,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         insertAbility(db, "Movement +1", R.drawable.movement_1,
                 "Increases Mv by 1.",
                 "Increase riding skill level to A+", "Learned");
-        insertAbility(db, "Cavalry Efect Null", R.drawable.cavalry_effect_null,
+        insertAbility(db, "Cavalry Effect Null", R.drawable.cavalry_effect_null,
                 "Nullifies any extra effectiveness against cavalry units.",
                 "Increase riding skill level to S+", "Learned");
         insertAbility(db, "Alert Stance", R.drawable.alert_stance,
@@ -674,7 +674,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 "Class ability for Dancer", "Class");
         insertAbility(db, "Steal", R.drawable.steal,
                 "Allows unit to steal a non-weapon item from a foe with a lower Spd stat.",
-                "Class ability for Thief\nMasther the Thief class", "Class Master");
+                "Class ability for Thief\nMaster the Thief class", "Class Master");
         insertAbility(db, "Locktouch", R.drawable.locktouch,
                 "Allows unit to open doors and chests without keys.",
                 "Class ability for Thief, Assassin and Trickster", "Class");
@@ -767,7 +767,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 "Master the Wyvern Lord class", "Master");
         insertAbility(db, "Death Blow", R.drawable.death_blow,
                 "If unit initiates combat, grants Str +6 during combat.",
-                "Mather the Brigand class", "Master");
+                "Master the Brigand class", "Master");
         insertAbility(db, "Armored Blow", R.drawable.armored_blow,
                 "If unit initiates combat, grants Def +6 during combat.",
                 "Master the Armored Knight class", "Master");
@@ -821,13 +821,13 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 "Master the Warrior class", "Master");
         insertAbility(db, "Counterattack", R.drawable.counterattack,
                 "Allows unit to counterattack regardless of distance to attacker.",
-                "Msater the Death Knight class\nRetribution gambit\nChalice of Beginnings", "Master");
+                "Master the Death Knight class\nRetribution gambit\nChalice of Beginnings", "Master");
         insertAbility(db, "Duelist's Blow", R.drawable.duelists_blow,
                 "If unit initiates combat, grants Avo +20 during combat.",
                 "Master the Trickster class", "Master");
         insertAbility(db, "Uncanny Blow", R.drawable.uncanny_blow,
                 "If unit initiates combat, grant Hit +30 during combat.",
-                "Master the Valyrie class", "Master");
+                "Master the Valkyrie class", "Master");
     }
 
     private void insertOtherAbilities(SQLiteDatabase db) {

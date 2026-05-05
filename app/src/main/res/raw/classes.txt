@@ -7,7 +7,7 @@ High Lord_Unique_Sword (+3)$Lance (+3)$Authority (+3)_Charm_Lancefaire_-_Pomp & 
 Wyvern Master_Unique_Bow (+3)$Authority (+3)$Flying (+3)_Charm_Bowfaire_Canto_Pomp & Circumstance_-_-_Claude only_Automatically gained at the start of Chapter 13_-_150_20%_10%_0%_0%_10%_0%_5%_0%_10%
 Death Knight_Unique_Lance (+3)$Reason (+3)$Riding (+3)_Canto_Lancefaire_-_Counterattack_-_Can use magic_Jeritza only_Automatically gained at the start of Chapter 13_-_200_30%_10%_10%_0%_-5%_0%_5%_5%_0%
 Emperor_Unique_Axe (+3)$Authority (+3)$Heavy Armor (+3)_Charm_Axefaire_-_-_Flickering Flower_-_Edelgard only_Automatically gained at the start of Chapter 16_-_200_30%_10%_10%_0%_0%_0%_5%_5%_10%
-Great Lord_Unique_Sword (+3)$Lance (+3)$Authority (+3)_Charm_Lancefaire_-_-_Paraselene_-_Dimitry only_Automatically gained at the start of Chapter 16_-_200_30%_10%_0%_10%_0%_0%_10%_0%_10%
+Great Lord_Unique_Sword (+3)$Lance (+3)$Authority (+3)_Charm_Lancefaire_-_-_Paraselene_-_Dimitri only_Automatically gained at the start of Chapter 16_-_200_30%_10%_0%_10%_0%_0%_10%_0%_10%
 Barbarossa_Unique_Bow (+3)$Authority (+3)$Flying (+3)_Charm_Bowfaire_Canto_-_Wind God_-_Claude only_Automatically gained at the start of Chapter 17_-_200_30%_15%_0%_0%_20%_0%_5%_0%_10%
 Myrmidon_Beginner (level 5)_Sword (+1)_-_-_-_Speed +2_Swap_-_No character restriction_Sword D_Beginner Seal_60_10%_0%_0%_0%_5%_0%_0%_-5%_5%
 Soldier_Beginner (level 5)_Lance (+1)_-_-_-_Defense +2_Reposition_-_No character restriction_Lance D_Beginner Seal_60_10%_0%_0%_5%_0%_0%_0%_-5%_5%
@@ -49,5 +49,5 @@ Great Knight_Master (level 30)_Lance (+3)$Axe (+3)$Heavy Armor (+3)_Canto_Lancef
 Bow Knight_Master (level 30)_Lance (+3)$Bow (+3)$Riding (+3)_Canto_Bowfaire_Bowrange +2_Defiant Spd_-_-_No character restriction_Lance C, Bow A, Riding A_Master Seal_200_10%_0%_0%_0%_-5%_0%_0%_0%_5%
 Dark Knight_Master (level 30)_Lance (+3)$Reason (+3)$Riding (+3)_Canto_Black Tomefaire_Dark Tomefaire_Seal Resistance_-_Can use magic_No character restriction_Lance C, Reason B+, Riding A_Master Seal_200_10%_5%_10%_0%_-5%_0%_5%_10%_5%
 Holy Knight_Master (level 30)_Lance (+3)$Faith (+3)$Riding (+3)_Canto_White Tomefaire_Terrain Resistance_Defiant Res_-_Can use magic_No character restriction_Lance C, Faith B+, Riding A_Master Seal_200_10%_0%_10%_0%_-5%_10%_5%_10%_10%
-War Master_Master (level 30)_Axe (+3)$Brawl (+3)_Axefaire_Fistfaire_Crit +20_Quick Reposte_War Master's Strike_-_Male only_Axe A, Brawl A_Master Seal_200_40%_15%_0%_0%_10%_0%_0%_0%_5%
+War Master_Master (level 30)_Axe (+3)$Brawl (+3)_Axefaire_Fistfaire_Crit +20_Quick Riposte_War Master's Strike_-_Male only_Axe A, Brawl A_Master Seal_200_40%_15%_0%_0%_10%_0%_0%_0%_5%
 Gremory_Master (level 30)_Reason (+3)$Faith (+3)_Black Magic Uses x2_Dark Magic Uses x2_White Magic Uses x2_Defiant Mag_-_Can use magic_Female only_Reason A, Faith A_Master Seal_200_10%_0%_10%_10%_0%_0%_0%_5%_10%

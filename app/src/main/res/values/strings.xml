@@ -138,6 +138,7 @@
     <string name="intermediate">Intermediate</string>
     <string name="advanced">Advanced</string>
     <string name="master">Master</string>
+    <string name="dlc">DLC</string>
     <string name="proficiencies">Proficiencies</string>
     <string name="mastery_ability">Mastery ability</string>
     <string name="mastery_combat_art">Mastery combat art</string>

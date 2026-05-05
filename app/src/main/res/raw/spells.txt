@@ -19,7 +19,7 @@ Death Γ_Dark Magic_Intermediate dark magic. Has a high Crit rate._C_4_6_70_20_1
 Hades Ω_Dark Magic_Advanced dark magic. Calls on the morbid might of the underworld._A_2_18_65_10_1-2_16
 Luna Λ_Dark Magic_Intermediate dark magic. Ignores enemy Res. Cannot make follow-up attacks._C_2_1_65_0_1-2_7
 Miasma Δ_Dark Magic_Basic dark magic._E_10_5_80_0_1-2_5
-Mire B_Dark Magic_Basic dark magic. Fores hit suffer Def -5 for 1 turn._E_8_3_70_0_1-3_5
+Mire B_Dark Magic_Basic dark magic. Foes hit suffer Def -5 for 1 turn._E_8_3_70_0_1-3_5
 Quake Σ_Dark Magic_The highest tier of dark magic. Attacks the entire battlefield, except fliers._B_1_8_50_0_All_20
 Swarm Z_Dark Magic_Basic dark magic. Foes hit suffer Spd -5 for 1 turn._E_8_4_70_0_1-2_4
 Abraxas_Damaging White Magic_Advanced light attack magic. Calls light from the heavens down on foes._A_2_14_90_5_1-2_13

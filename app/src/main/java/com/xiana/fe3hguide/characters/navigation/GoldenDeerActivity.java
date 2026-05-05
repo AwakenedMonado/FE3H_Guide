@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import androidx.core.content.ContextCompat;
+
 import com.xiana.fe3hguide.R;
 import com.xiana.fe3hguide.adapters.FactionsCardsAdapter;
 
@@ -43,6 +45,7 @@ public class GoldenDeerActivity extends AppCompatActivity {
     private void setupComponents(){
         // Set "Golden Deer characters" as the text in the toolbar
         toolbar.setTitle("Golden Deer characters");
+        toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.faction_golden_deer));
         setSupportActionBar(toolbar);
 
         // Add back arrow to the toolbar

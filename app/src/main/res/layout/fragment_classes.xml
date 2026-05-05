@@ -95,6 +95,21 @@ Each class is contained in a cell_class.xml cell-->
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/classesDlcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/mainText"
+                android:background="@color/purpleDarkMode"
+                android:text="@string/dlc" />
+
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listView_classes"

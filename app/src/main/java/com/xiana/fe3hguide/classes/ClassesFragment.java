@@ -47,6 +47,7 @@ public class ClassesFragment extends Fragment {
     private Button intermediateButton;
     private Button advancedButton;
     private Button masterButton;
+    private Button dlcButton;
 
     private String selectedFilter = "all";          // Filter tab currently selected
     private String searchFilter = "";            // Current search filter
@@ -85,6 +86,7 @@ public class ClassesFragment extends Fragment {
         intermediateButton = (Button) layout.findViewById(R.id.classesIntermediateButton);
         advancedButton = (Button) layout.findViewById(R.id.classesAdvancedButton);
         masterButton = (Button) layout.findViewById(R.id.classesMasterButton);
+        dlcButton = (Button) layout.findViewById(R.id.classesDlcButton);
     }
 
     public void setupComponents(){
@@ -178,6 +180,14 @@ public class ClassesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 selectedFilter = masterButton.getText().toString().toLowerCase();
+                filterList();
+            }
+        });
+
+        dlcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedFilter = dlcButton.getText().toString().toLowerCase();
                 filterList();
             }
         });

@@ -2,6 +2,7 @@ package com.xiana.fe3hguide.characters.profile;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -13,6 +14,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.google.android.material.appbar.AppBarLayout;
+import com.xiana.fe3hguide.database.DAOCharacters;
 import com.xiana.fe3hguide.database.FE3HDatabaseHelper;
 import com.xiana.fe3hguide.R;
 import com.google.android.material.tabs.TabLayout;
@@ -54,7 +57,28 @@ public class ProfileActivity extends AppCompatActivity {
 
         // Attach the ViewPager to the TabLayout
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(pager);            // Link the ViewPager and the TabLayout
+        tabLayout.setupWithViewPager(pager);
+
+        // Apply faction color to the app bar
+        int factionColor = getFactionColor();
+        AppBarLayout appBarLayout = findViewById(R.id.appbar_layout);
+        appBarLayout.setBackgroundColor(factionColor);
+    }
+
+    private int getFactionColor() {
+        DAOCharacters dao = new DAOCharacters(db);
+        com.xiana.fe3hguide.model.Character charData = dao.getCharacter(character);
+        String faction = charData != null ? charData.getFaction() : null;
+
+        if (faction == null) return ContextCompat.getColor(this, R.color.faction_byleth);
+        switch (faction) {
+            case "Black Eagles":     return ContextCompat.getColor(this, R.color.faction_black_eagles);
+            case "Blue Lions":       return ContextCompat.getColor(this, R.color.faction_blue_lions);
+            case "Golden Deer":      return ContextCompat.getColor(this, R.color.faction_golden_deer);
+            case "Knights of Seiros": return ContextCompat.getColor(this, R.color.faction_church);
+            case "Ashen Wolves":     return ContextCompat.getColor(this, R.color.faction_ashen_wolves);
+            default:                 return ContextCompat.getColor(this, R.color.colorPrimary);
+        }
     }
 
 

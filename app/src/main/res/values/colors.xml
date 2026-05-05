@@ -28,6 +28,14 @@
     <color name="fixedTextColor">#424245</color>
 
 
+    <!-- Faction colors -->
+    <color name="faction_black_eagles">#B71C1C</color>
+    <color name="faction_blue_lions">#1565C0</color>
+    <color name="faction_golden_deer">#C8960C</color>
+    <color name="faction_church">#78909C</color>
+    <color name="faction_ashen_wolves">#757575</color>
+    <color name="faction_byleth">#2E7D32</color>
+
     <!-- Accent -->
     <color name="purple_accent">#9856EA</color>
     <color name="purple_accent_2">#BEBB86FC</color>
