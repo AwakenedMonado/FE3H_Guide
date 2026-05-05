@@ -73,12 +73,12 @@ public class AshenWolvesActivity extends AppCompatActivity {
     }
 
     private ArrayList<Integer> createAshenWolvesImages(){
-        // For simplicity, the images are hardcoded
         ArrayList<Integer> ashenWolvesImages = new ArrayList<>();
-        ashenWolvesImages.add(R.drawable.ic_yuri);
-        ashenWolvesImages.add(R.drawable.ic_balthus);
-        ashenWolvesImages.add(R.drawable.ic_constance);
-        ashenWolvesImages.add(R.drawable.ic_hapi);
+        String pkg = getPackageName();
+        ashenWolvesImages.add(getResources().getIdentifier("yuri", "drawable", pkg));
+        ashenWolvesImages.add(getResources().getIdentifier("balthus", "drawable", pkg));
+        ashenWolvesImages.add(getResources().getIdentifier("constance", "drawable", pkg));
+        ashenWolvesImages.add(getResources().getIdentifier("hapi", "drawable", pkg));
         return ashenWolvesImages;
     }
 

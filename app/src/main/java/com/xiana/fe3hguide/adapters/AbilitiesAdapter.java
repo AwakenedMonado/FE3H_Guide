@@ -54,7 +54,8 @@ public class AbilitiesAdapter extends
 
         // The image is the ability icon
         ImageView imageView = (ImageView) constraintLayout.findViewById(R.id.imageView_card_icon);
-        imageView.setImageResource(abilities.get(position).getIcon());
+        String iconName = abilities.get(position).getIcon();
+        imageView.setImageResource(constraintLayout.getContext().getResources().getIdentifier(iconName, "drawable", constraintLayout.getContext().getPackageName()));
 
         // The detail text shows the effect of the ability
         TextView description = (TextView) constraintLayout.findViewById(R.id.textView_card_detail);

@@ -241,7 +241,7 @@
             android:layout_marginEnd="12dp"
             android:background="@color/white"
             android:contentDescription="@string/content_description_icon"
-            android:src="@drawable/ic_edelgard"
+            android:src="@drawable/edelgard"
             app:layout_constraintBottom_toBottomOf="@+id/fodlan_birthday_card"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/faction_card"

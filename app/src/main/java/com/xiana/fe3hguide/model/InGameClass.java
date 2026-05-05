@@ -6,7 +6,7 @@ import java.util.List;
 public class InGameClass {
 
     private String name;
-    private int icon;
+    private String icon;
     private String classLevel;
     private String proficiencies;
     private List<Ability> abilities;
@@ -29,11 +29,11 @@ public class InGameClass {
         this.name = name;
     }
 
-    public int getIcon(){
+    public String getIcon(){
         return icon;
     }
 
-    public void setIcon(int icon){
+    public void setIcon(String icon){
         this.icon = icon;
     }
 
@@ -134,7 +134,7 @@ public class InGameClass {
             inGameClass.name = name;
         }
 
-        public Builder withIcon(int icon){
+        public Builder withIcon(String icon){
             inGameClass.icon = icon;
             return this;
         }

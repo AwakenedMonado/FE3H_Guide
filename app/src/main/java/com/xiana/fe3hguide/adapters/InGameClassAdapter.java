@@ -43,7 +43,7 @@ public class InGameClassAdapter extends ArrayAdapter<InGameClass> {
         ImageView classIcon = (ImageView) convertView.findViewById(R.id.imageView_class_icon);
 
         className.setText(inGameClass.getName());
-        classIcon.setImageResource(inGameClass.getIcon());
+        classIcon.setImageResource(getContext().getResources().getIdentifier(inGameClass.getIcon(), "drawable", getContext().getPackageName()));
 
         return convertView;
     }

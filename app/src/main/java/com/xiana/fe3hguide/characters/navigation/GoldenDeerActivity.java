@@ -77,16 +77,16 @@ public class GoldenDeerActivity extends AppCompatActivity {
     }
 
     private ArrayList<Integer> createGoldenDeerImages(){
-        // For simplicity and speed purposes, the images are hardcoded
         ArrayList<Integer> goldenDeerImages = new ArrayList<>();
-        goldenDeerImages.add(R.drawable.ic_claude);
-        goldenDeerImages.add(R.drawable.ic_hilda);
-        goldenDeerImages.add(R.drawable.ic_lorenz);
-        goldenDeerImages.add(R.drawable.ic_lysithea);
-        goldenDeerImages.add(R.drawable.ic_leonie);
-        goldenDeerImages.add(R.drawable.ic_marianne);
-        goldenDeerImages.add(R.drawable.ic_raphael);
-        goldenDeerImages.add(R.drawable.ic_ignatz);
+        String pkg = getPackageName();
+        goldenDeerImages.add(getResources().getIdentifier("claude", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("hilda", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("lorenz", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("lysithea", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("leonie", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("marianne", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("raphael", "drawable", pkg));
+        goldenDeerImages.add(getResources().getIdentifier("ignatz", "drawable", pkg));
         return goldenDeerImages;
     }
 

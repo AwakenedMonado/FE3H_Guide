@@ -56,14 +56,15 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
 
                     // Get the name and save the information
                     name1 = (String) searchableSpinnerAdapter1.getItem(position);
-                    Integer portrait = null;
+                    String portrait = null;
                     if ((portrait = fc.getPortrait(name1)) == null) { // The name is not valid
                         name1 = null;
                         return;
                     }
 
                     // Show the portrait of the selected character
-                    icon1.setImageResource(portrait);
+                    int portrait1ResId = getResources().getIdentifier(portrait, "drawable", getActivity().getPackageName());
+                    icon1.setImageResource(portrait1ResId);
                     icon1.setVisibility(View.VISIBLE);
 
                     // Activate the second SearchableSpinner
@@ -139,7 +140,7 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
                         return;
                     }
 
-                    Integer portrait = null;
+                    String portrait = null;
                     if ((portrait = fc.getPortrait(name2)) == null) {   // Name not valid
                         name2 = null;
                         return;
@@ -149,9 +150,10 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
                     show(portrait);
                 }
 
-                private void show(int portrait) {
+                private void show(String portrait) {
                     // Show the portrait of the selected character
-                    icon2.setImageResource(portrait);
+                    int portrait2ResId = getResources().getIdentifier(portrait, "drawable", getActivity().getPackageName());
+                    icon2.setImageResource(portrait2ResId);
                     icon2.setVisibility(View.VISIBLE);
 
                     // Shows the button

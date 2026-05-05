@@ -41,7 +41,7 @@ public class DAOClasses extends DAO {
                         withCertificationRequirement(cursor.getString(10)).
                         withSeal(cursor.getString(11)).
                         withExperience(cursor.getInt(12)).
-                        withIcon(cursor.getInt(13)).
+                        withIcon(cursor.getString(13)).
                         withGrowthRates(cursor.getString(14), cursor.getString(15),
                                 cursor.getString(16), cursor.getString(17),
                                 cursor.getString(18), cursor.getString(19),
@@ -81,7 +81,7 @@ public class DAOClasses extends DAO {
                     withCertificationRequirement(cursor.getString(10)).
                     withSeal(cursor.getString(11)).
                     withExperience(cursor.getInt(12)).
-                    withIcon(cursor.getInt(13)).
+                    withIcon(cursor.getString(13)).
                     withGrowthRates(cursor.getString(14), cursor.getString(15),
                             cursor.getString(16), cursor.getString(17),
                             cursor.getString(18), cursor.getString(19),
@@ -121,7 +121,7 @@ public class DAOClasses extends DAO {
                         withCertificationRequirement(cursor.getString(10)).
                         withSeal(cursor.getString(11)).
                         withExperience(cursor.getInt(12)).
-                        withIcon(cursor.getInt(13)).
+                        withIcon(cursor.getString(13)).
                         withGrowthRates(cursor.getString(14), cursor.getString(15),
                                 cursor.getString(16), cursor.getString(17),
                                 cursor.getString(18), cursor.getString(19),
@@ -162,7 +162,7 @@ public class DAOClasses extends DAO {
                         withCertificationRequirement(cursor.getString(10)).
                         withSeal(cursor.getString(11)).
                         withExperience(cursor.getInt(12)).
-                        withIcon(cursor.getInt(13)).
+                        withIcon(cursor.getString(13)).
                         withGrowthRates(cursor.getString(14), cursor.getString(15),
                                 cursor.getString(16), cursor.getString(17),
                                 cursor.getString(18), cursor.getString(19),
@@ -204,7 +204,7 @@ public class DAOClasses extends DAO {
                         withCertificationRequirement(cursor.getString(10)).
                         withSeal(cursor.getString(11)).
                         withExperience(cursor.getInt(12)).
-                        withIcon(cursor.getInt(13)).
+                        withIcon(cursor.getString(13)).
                         withGrowthRates(cursor.getString(14), cursor.getString(15),
                                 cursor.getString(16), cursor.getString(17),
                                 cursor.getString(18), cursor.getString(19),
@@ -249,7 +249,7 @@ public class DAOClasses extends DAO {
                         withCertificationRequirement(cursor.getString(10)).
                         withSeal(cursor.getString(11)).
                         withExperience(cursor.getInt(12)).
-                        withIcon(cursor.getInt(13)).
+                        withIcon(cursor.getString(13)).
                         withGrowthRates(cursor.getString(14), cursor.getString(15),
                                 cursor.getString(16), cursor.getString(17),
                                 cursor.getString(18), cursor.getString(19),
@@ -269,7 +269,7 @@ public class DAOClasses extends DAO {
 
         if (cursor.moveToFirst()){
             return new Ability.Builder(abilityName)
-                    .withIcon(cursor.getInt(1))
+                    .withIcon(cursor.getString(1))
                     .withEffect(cursor.getString(2))
                     .withOrigin(cursor.getString(3))
                     .withType(cursor.getString(4))

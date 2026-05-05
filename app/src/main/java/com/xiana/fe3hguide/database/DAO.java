@@ -28,13 +28,13 @@ public abstract class DAO {
      * @param characterName Name of the character whose portrait is to be searched
      * @return The id of their icon or null, if it wasn't a valid character
      */
-    public Integer getPortrait(String characterName) {
+    public String getPortrait(String characterName) {
         Cursor cursor = db.query("Characters", new String[]{"portrait"},
                 "name = ?", new String[]{characterName},
                 null, null, null);
 
         if (cursor.moveToFirst()){
-            int portrait = cursor.getInt(0);
+            String portrait = cursor.getString(0);
             cursor.close();
             return portrait;
         }

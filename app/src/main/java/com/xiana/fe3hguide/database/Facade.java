@@ -54,7 +54,7 @@ public class Facade {
     }
 
     /** Methods common to several DAOs **/
-    public Integer getPortrait(String characterName){
+    public String getPortrait(String characterName){
         return daoTeaTime.getPortrait(characterName);
     }
 

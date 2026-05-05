@@ -184,7 +184,8 @@ public class GeneralFragment extends Fragment {
 
     private void setupComponents(){
         titleName.setText(characterName);
-        portrait.setImageResource(character.getPortrait());
+        int portraitResId = getResources().getIdentifier(character.getPortrait(), "drawable", getActivity().getPackageName());
+        portrait.setImageResource(portraitResId);
         pronouns.setText(character.getPronouns());
         faction.setText(character.getFaction());
         birthday.setText(character.getBirthday());

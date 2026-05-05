@@ -174,7 +174,7 @@ public class InGameClassActivity extends AppCompatActivity {
 
     private void setData() {
         title.setText(inGameClass.getName());
-        icon.setImageResource(inGameClass.getIcon());
+        icon.setImageResource(getResources().getIdentifier(inGameClass.getIcon(), "drawable", getPackageName()));
         classLevel.setText(inGameClass.getClassLevel());
 
         String[] proficienciesDivided = inGameClass.getProficiencies().split("\\$");
@@ -200,7 +200,7 @@ public class InGameClassActivity extends AppCompatActivity {
                 abilities.get(i).setText(text);
                 abilities.get(i).setTextColor(getResources().getColor(R.color.colorPrimary));
 
-                imageViewsAbilities.get(i).setImageResource(inGameClass.getAbilities().get(i).getIcon());
+                imageViewsAbilities.get(i).setImageResource(getResources().getIdentifier(inGameClass.getAbilities().get(i).getIcon(), "drawable", getPackageName()));
                 addListenerAbilities(i);
             }
         }
@@ -215,7 +215,7 @@ public class InGameClassActivity extends AppCompatActivity {
             masteryAbility.setText(text);
             masteryAbility.setTextColor(getResources().getColor(R.color.colorPrimary));
 
-            imageViewMasteryAbility.setImageResource(inGameClass.getMasteryAbility().getIcon());
+            imageViewMasteryAbility.setImageResource(getResources().getIdentifier(inGameClass.getMasteryAbility().getIcon(), "drawable", getPackageName()));
             addListenerMasteryAbility();
         }
 
@@ -297,7 +297,7 @@ public class InGameClassActivity extends AppCompatActivity {
         aPUTitle.setText(ability.getName());
 
         // Show the icon of the ability
-        aPUIcon.setImageResource(ability.getIcon());
+        aPUIcon.setImageResource(getResources().getIdentifier(ability.getIcon(), "drawable", getPackageName()));
 
         // Show the effect of the ability
         aPUEffect.setText(ability.getEffect());

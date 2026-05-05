@@ -183,9 +183,10 @@ public class TeaTimeFragment extends Fragment
                     selectedCharacter = (String) searchableSpinnerAdapter.getItem(position);
 
                     // Change the portrait to the icon of the selected character
-                    Integer iconID = null;
+                    String iconID = null;
                     if ((iconID = fc.getPortrait(selectedCharacter)) != null) {
-                        icon.setImageResource(iconID);
+                        int portraitResId = getResources().getIdentifier(iconID, "drawable", getActivity().getPackageName());
+                        icon.setImageResource(portraitResId);
                         icon.setVisibility(View.VISIBLE);
 
                         // In case information for another character was on screen, it is hidden

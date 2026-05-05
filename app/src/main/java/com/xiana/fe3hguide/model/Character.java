@@ -6,7 +6,7 @@ public class Character {
 
     private int id;
     private String name;
-    private int portrait;
+    private String portrait;
     private String pronouns;
     private String faction;
     private int age;
@@ -38,11 +38,11 @@ public class Character {
         this.name = name;
     }
 
-    public int getPortrait() {
+    public String getPortrait() {
         return portrait;
     }
 
-    public void setPortrait(int portrait) {
+    public void setPortrait(String portrait) {
         this.portrait = portrait;
     }
 
@@ -146,7 +146,7 @@ public class Character {
             return this;
         }
 
-        public Builder withPortrait(int portrait){
+        public Builder withPortrait(String portrait){
             character.portrait = portrait;
             return this;
         }

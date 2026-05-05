@@ -77,16 +77,16 @@ public class BlackEaglesActivity extends AppCompatActivity {
     }
 
     private ArrayList<Integer> createBlackEaglesImages(){
-        // For simplicity and speed purposes, the images are hardcoded
         ArrayList<Integer> blackEaglesImages = new ArrayList<>();
-        blackEaglesImages.add(R.drawable.ic_edelgard);
-        blackEaglesImages.add(R.drawable.ic_hubert);
-        blackEaglesImages.add(R.drawable.ic_ferdinand);
-        blackEaglesImages.add(R.drawable.ic_bernadetta);
-        blackEaglesImages.add(R.drawable.ic_linhardt);
-        blackEaglesImages.add(R.drawable.ic_caspar);
-        blackEaglesImages.add(R.drawable.ic_dorothea);
-        blackEaglesImages.add(R.drawable.ic_petra);
+        String pkg = getPackageName();
+        blackEaglesImages.add(getResources().getIdentifier("edelgard", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("hubert", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("ferdinand", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("bernadetta", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("linhardt", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("caspar", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("dorothea", "drawable", pkg));
+        blackEaglesImages.add(getResources().getIdentifier("petra", "drawable", pkg));
         return blackEaglesImages;
     }
 

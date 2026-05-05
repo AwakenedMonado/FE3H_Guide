@@ -81,20 +81,20 @@ public class ChurchOfSeirosActivity extends AppCompatActivity {
     }
 
     private ArrayList<Integer> createChurchOfSeirosImages(){
-        // For simplicity and speed purposes, the images are hardcoded
         ArrayList<Integer> churchOfSeirosImages = new ArrayList<>();
-        churchOfSeirosImages.add(R.drawable.ic_rhea);
-        churchOfSeirosImages.add(R.drawable.ic_seteth);
-        churchOfSeirosImages.add(R.drawable.ic_flayn);
-        churchOfSeirosImages.add(R.drawable.ic_hanneman);
-        churchOfSeirosImages.add(R.drawable.ic_manuela);
-        churchOfSeirosImages.add(R.drawable.ic_gilbert);
-        churchOfSeirosImages.add(R.drawable.ic_alois);
-        churchOfSeirosImages.add(R.drawable.ic_catherine);
-        churchOfSeirosImages.add(R.drawable.ic_shamir);
-        churchOfSeirosImages.add(R.drawable.ic_cyril);
-        churchOfSeirosImages.add(R.drawable.ic_jeritza);
-        churchOfSeirosImages.add(R.drawable.ic_anna);
+        String pkg = getPackageName();
+        churchOfSeirosImages.add(getResources().getIdentifier("rhea", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("seteth", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("flayn", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("hanneman", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("manuela", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("gilbert", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("alois", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("catherine", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("shamir", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("cyril", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("jeritza", "drawable", pkg));
+        churchOfSeirosImages.add(getResources().getIdentifier("anna", "drawable", pkg));
         return churchOfSeirosImages;
     }
 

@@ -104,7 +104,7 @@ public class AbilitiesMainFragment extends Fragment implements AbilityPopupHost 
     @Override
     public void showAbilityPopup(Ability ability) {
         dialogName.setText(ability.getName());
-        dialogIcon.setImageResource(ability.getIcon());
+        dialogIcon.setImageResource(getResources().getIdentifier(ability.getIcon(), "drawable", getActivity().getPackageName()));
         dialogEffect.setText(ability.getEffect());
         dialogOrigin.setText(ability.getOrigin());
         dialog.show();

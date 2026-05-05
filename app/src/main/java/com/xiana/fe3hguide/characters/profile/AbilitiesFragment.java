@@ -183,7 +183,7 @@ public class AbilitiesFragment extends Fragment implements AbilityPopupHost {
         titleAbilityName.setText(ability.getName());
 
         // Show the icon of the ability
-        iconAbility.setImageResource(ability.getIcon());
+        iconAbility.setImageResource(getResources().getIdentifier(ability.getIcon(), "drawable", getActivity().getPackageName()));
 
         // Show the effect of the ability
         abilityEffect.setText(ability.getEffect());

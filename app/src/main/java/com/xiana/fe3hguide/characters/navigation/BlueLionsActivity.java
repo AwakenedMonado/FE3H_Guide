@@ -77,16 +77,16 @@ public class BlueLionsActivity extends AppCompatActivity {
     }
 
     private ArrayList<Integer> createBlueLionsImages(){
-        // For simplicity and speed purposes, the images are hardcoded
         ArrayList<Integer> blueLionsImages = new ArrayList<>();
-        blueLionsImages.add(R.drawable.ic_dimitri);
-        blueLionsImages.add(R.drawable.ic_dedue);
-        blueLionsImages.add(R.drawable.ic_felix);
-        blueLionsImages.add(R.drawable.ic_sylvain);
-        blueLionsImages.add(R.drawable.ic_ingrid);
-        blueLionsImages.add(R.drawable.ic_ashe);
-        blueLionsImages.add(R.drawable.ic_annette);
-        blueLionsImages.add(R.drawable.ic_mercedes);
+        String pkg = getPackageName();
+        blueLionsImages.add(getResources().getIdentifier("dimitri", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("dedue", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("felix", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("sylvain", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("ingrid", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("ashe", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("annette", "drawable", pkg));
+        blueLionsImages.add(getResources().getIdentifier("mercedes", "drawable", pkg));
         return blueLionsImages;
     }
 

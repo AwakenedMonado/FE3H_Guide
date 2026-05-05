@@ -31,7 +31,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
              character = new Character.Builder(cursor.getInt(0))
                     .withName(characterName)
-                    .withPortrait(cursor.getInt(2))
+                    .withPortrait(cursor.getString(2))
                     .withPronouns(cursor.getString(3))
                     .withFaction(cursor.getString(4))
                     .withAge(cursor.getInt(5))
@@ -70,7 +70,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))
@@ -92,7 +92,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))
@@ -113,7 +113,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))
@@ -134,7 +134,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))
@@ -155,7 +155,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))
@@ -184,7 +184,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))
@@ -210,7 +210,7 @@ public class DAOCharacters extends DAO {
         if (cursor.moveToFirst()){
             do {
                 Ability ability = new Ability.Builder(cursor.getString(0))
-                        .withIcon(cursor.getInt(1))
+                        .withIcon(cursor.getString(1))
                         .withEffect(cursor.getString(2))
                         .withOrigin(cursor.getString(3))
                         .withType(cursor.getString(4))

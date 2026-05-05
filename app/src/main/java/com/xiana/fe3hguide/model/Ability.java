@@ -3,7 +3,7 @@ package com.xiana.fe3hguide.model;
 public class Ability {
 
     private String name;
-    private int icon;
+    private String icon;
     private String effect;
     private String origin;
     private String type;
@@ -18,11 +18,11 @@ public class Ability {
         this.name = name;
     }
 
-    public int getIcon() {
+    public String getIcon() {
         return icon;
     }
 
-    public void setIcon(int icon) {
+    public void setIcon(String icon) {
         this.icon = icon;
     }
 
@@ -57,7 +57,7 @@ public class Ability {
             ability.name = name;
         }
 
-        public Builder withIcon(int icon){
+        public Builder withIcon(String icon){
             ability.icon = icon;
             return this;
         }
