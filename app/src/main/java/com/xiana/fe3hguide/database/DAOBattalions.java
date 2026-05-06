@@ -17,8 +17,8 @@ public class DAOBattalions extends DAO {
 
     public List<Battalion> getBattalions() {
         Cursor cursor = db.rawQuery(
-                "SELECT b.name, b.authorityLevel, b.endurance, b.prt, b.rsl, b.hit, b.avo, b.cha, " +
-                "b.gambit, b.movementType, COALESCE(g.mt, '-') AS gambitMt " +
+                "SELECT b.name, b.authorityLevel, b.endurance, b.str, b.mag, b.hit, b.crit, b.avo, " +
+                "b.prt, b.rsl, b.cha, b.gambit, b.movementType, COALESCE(g.mt, '-') AS gambitMt " +
                 "FROM Battalions b LEFT JOIN Gambits g ON b.gambit = g.name",
                 new String[]{});
 
@@ -28,14 +28,17 @@ public class DAOBattalions extends DAO {
                 battalions.add(new Battalion.Builder(cursor.getString(0))
                         .withAuthorityLevel(cursor.getString(1))
                         .withEndurance(cursor.getString(2))
-                        .withPrt(cursor.getString(3))
-                        .withRsl(cursor.getString(4))
+                        .withStr(cursor.getString(3))
+                        .withMag(cursor.getString(4))
                         .withHit(cursor.getString(5))
-                        .withAvo(cursor.getString(6))
-                        .withCha(cursor.getString(7))
-                        .withGambitName(cursor.getString(8))
-                        .withMovementType(cursor.getString(9))
-                        .withGambitMt(cursor.getString(10))
+                        .withCrit(cursor.getString(6))
+                        .withAvo(cursor.getString(7))
+                        .withPrt(cursor.getString(8))
+                        .withRsl(cursor.getString(9))
+                        .withCha(cursor.getString(10))
+                        .withGambitName(cursor.getString(11))
+                        .withMovementType(cursor.getString(12))
+                        .withGambitMt(cursor.getString(13))
                         .build());
             } while (cursor.moveToNext());
         }
@@ -45,7 +48,9 @@ public class DAOBattalions extends DAO {
     }
 
     public Battalion getBattalion(String name) {
-        Cursor cursor = db.rawQuery("SELECT * FROM Battalions WHERE name = ?",
+        Cursor cursor = db.rawQuery(
+                "SELECT name, authorityLevel, endurance, str, mag, hit, crit, avo, " +
+                "prt, rsl, cha, gambit, movementType FROM Battalions WHERE name = ?",
                 new String[]{name});
 
         Battalion battalion = null;
@@ -53,12 +58,16 @@ public class DAOBattalions extends DAO {
             battalion = new Battalion.Builder(cursor.getString(0))
                     .withAuthorityLevel(cursor.getString(1))
                     .withEndurance(cursor.getString(2))
-                    .withPrt(cursor.getString(3))
-                    .withRsl(cursor.getString(4))
+                    .withStr(cursor.getString(3))
+                    .withMag(cursor.getString(4))
                     .withHit(cursor.getString(5))
-                    .withAvo(cursor.getString(6))
-                    .withCha(cursor.getString(7))
-                    .withGambitName(cursor.getString(8))
+                    .withCrit(cursor.getString(6))
+                    .withAvo(cursor.getString(7))
+                    .withPrt(cursor.getString(8))
+                    .withRsl(cursor.getString(9))
+                    .withCha(cursor.getString(10))
+                    .withGambitName(cursor.getString(11))
+                    .withMovementType(cursor.getString(12))
                     .build();
         }
 

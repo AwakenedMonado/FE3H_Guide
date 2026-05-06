@@ -34,6 +34,7 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
     private Button button0, button1, button2, button3, button4;
     private SimpleListAdapter searchableSpinnerAdapter1, searchableSpinnerAdapter2;
     private String name1, name2;
+    private String portrait1, portrait2;
     private String cSupport, bSupport, aSupport, interSupport, interRank, sSupport;
 
     private OnItemSelectedListener searchableSpinnerListener =
@@ -61,6 +62,8 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
                         name1 = null;
                         return;
                     }
+
+                    portrait1 = portrait;
 
                     // Show the portrait of the selected character
                     int portrait1ResId = getResources().getIdentifier(portrait, "drawable", getActivity().getPackageName());
@@ -151,6 +154,8 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
                 }
 
                 private void show(String portrait) {
+                    portrait2 = portrait;
+
                     // Show the portrait of the selected character
                     int portrait2ResId = getResources().getIdentifier(portrait, "drawable", getActivity().getPackageName());
                     icon2.setImageResource(portrait2ResId);
@@ -244,6 +249,33 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+    }
+
+    private static final java.util.Set<String> NO_TIMESKIP_PORTRAITS = new java.util.HashSet<>(
+        java.util.Arrays.asList(
+            "rhea", "seteth", "flayn", "hanneman", "manuela",
+            "gilbert", "alois", "catherine", "shamir", "jeritza", "anna"
+        )
+    );
+
+    private void addCharacterExtras(Intent intent) {
+        addCharacterExtras(intent, false);
+    }
+
+    private void addCharacterExtras(Intent intent, boolean timeskip) {
+        intent.putExtra("char1Name", normalizeName(name1));
+        intent.putExtra("char2Name", normalizeName(name2));
+        intent.putExtra("char1Portrait", timeskip ? getTimeskipPortrait(portrait1) : portrait1);
+        intent.putExtra("char2Portrait", timeskip ? getTimeskipPortrait(portrait2) : portrait2);
+    }
+
+    private String getTimeskipPortrait(String portrait) {
+        if (portrait == null || NO_TIMESKIP_PORTRAITS.contains(portrait)) return portrait;
+        return portrait + "_timeskip";
+    }
+
+    private String normalizeName(String name) {
+        return (name != null && name.startsWith("Byleth")) ? "Byleth" : name;
     }
 
     @Override
@@ -359,24 +391,27 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
 
             case R.id.button_support0:
                 intent = new Intent(getActivity(), SupportsTextActivity.class);
-                intent.putExtra("supportRank", "C");
+                intent.putExtra("supportRank", "C Support");
                 intent.putExtra("supportText", cSupport);
+                addCharacterExtras(intent);
                 startActivity(intent);
                 break;
             case R.id.button_support1:
                 intent = new Intent(getActivity(), SupportsTextActivity.class);
                 if (buttonClicked.getText().toString().equals("C+ Support")) {
-                    intent.putExtra("supportRank", "C+");
+                    intent.putExtra("supportRank", "C+ Support");
                     intent.putExtra("supportText", interSupport);
                 } else {
-                    intent.putExtra("supportRank", "B");
+                    intent.putExtra("supportRank", "B Support");
                     intent.putExtra("supportText", bSupport);
                 }
+                addCharacterExtras(intent);
                 startActivity(intent);
                 break;
 
             case R.id.button_support2:
                 intent = new Intent(getActivity(), SupportsTextActivity.class);
+                boolean isASupport = buttonClicked.getText().toString().equals("A Support");
                 switch (buttonClicked.getText().toString()) {            // 3 possibilities
                     case "B Support":
                         intent.putExtra("supportRank", "B Support");
@@ -390,25 +425,28 @@ public class SupportsFragment extends Fragment implements View.OnClickListener, 
                         intent.putExtra("supportRank", "A Support");
                         intent.putExtra("supportText", aSupport);
                 }
+                addCharacterExtras(intent, isASupport);
                 startActivity(intent);
                 break;
 
             case R.id.button_support3:
                 intent = new Intent(getActivity(), SupportsTextActivity.class);
                 if (buttonClicked.getText().toString().equals("A Support")) {
-                    intent.putExtra("supportRank", "A");
+                    intent.putExtra("supportRank", "A Support");
                     intent.putExtra("supportText", aSupport);
                 } else {            // text -> A+
                     intent.putExtra("supportRank", "A+ Support");
                     intent.putExtra("supportText", interSupport);
                 }
+                addCharacterExtras(intent, true);
                 startActivity(intent);
                 break;
 
             case R.id.button_Ssupport:
                 intent = new Intent(getActivity(), SupportsTextActivity.class);
-                intent.putExtra("supportRank", "S");
+                intent.putExtra("supportRank", "S Support");
                 intent.putExtra("supportText", sSupport);
+                addCharacterExtras(intent, true);
                 startActivity(intent);
         }
     }

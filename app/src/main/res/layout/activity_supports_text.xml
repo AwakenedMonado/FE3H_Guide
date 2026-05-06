@@ -1,56 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/mainBackground"
     tools:context=".supports.SupportsTextActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <include
-            layout="@layout/toolbar_main"
-            android:id="@+id/toolbar" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            app:cardBackgroundColor="@color/elevation1"
-            android:layout_gravity="center_horizontal">
-
-            <TextView
-                android:id="@+id/textView_support_rank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="center_horizontal"
-                android:textColor="@color/mainText"
-                android:textStyle="bold"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-
-        </androidx.cardview.widget.CardView>
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/elevation1">
 
         <TextView
-            android:id="@+id/textView_support_text"
-            android:layout_width="match_parent"
+            android:id="@+id/textView_support_rank"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="48dp"
-            android:textSize="17sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_horizontal"
             android:textColor="@color/mainText"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-</ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_support_dialogue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

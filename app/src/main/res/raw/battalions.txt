@@ -1,189 +1,189 @@
-Church of Seiros Soldiers_E_30_1_1_-_-_1_Disturbance_Infantry
-Seiros Mercenaries_E_30_-_-_5_-_1_Onslaught_Infantry
-Seiros Holy Monks_E_30_-_1_5_-_1_Stride_Infantry
-Seiros Sacred Monks_E_30_-_2_5_-_1_Resonant White Magic_Infantry
-Seiros Brawlers_E_30_-_-1_-_5_1_Disturbance_Infantry
-Seiros Magic Corps_D_30_-_3_-_-_3_Group Flames_Infantry
-Seiros Archers_D_45_-_-_10_5_3_Fusillade_Infantry
-Seiros Armored Co._D_60_2_-_-_-10_3_Onslaught_Armored
-Seiros Pegasus Co._D_60_-_3_-_1_5_Assembly_Flying
-Knights of Seiros_C_60_1_1_-_1_5_Blaze_Cavalry
-Holy Knights of Seiros_B_75_1_3_-_-_7_Assault Troop_Cavalry
-Indech Sword Fighters_A_105_-_-_10_-_10_Retribution_Infantry
-Macuil Evil Repelling Co._A_105_1_2_20_-_10_Resonant Lightning_Infantry
-Empire Infantry_E_30_1_-_5_-_1_Lure_Infantry
-Empire Warriors_E_30_-_-_-_-_1_Random Shot_Infantry
-Empire Brawlers_E_30_-_-1_-_5_1_Disturbance_Infantry
-Empire Magic Corps_D_30_-_2_-_-_3_Group Flames_Infantry
-Empire Archers_D_30_1_-_10_-_3_Fusillade_Infantry
-Empire Cavalry_D_45_2_-_-_-_3_Assault Troop_Cavalry
-Empire Armored Co._D_60_3_-_-_-10_3_Impregnable Wall_Armored
-Empire Knights_C_60_2_-_-_-_5_Blaze_Cavalry
-Empire Snipers_C_60_1_-_5_-_5_Flash-Fire Arrows_Infantry
-Empire Magic Users_C_45_-_2_-_-_5_Resonant Flames_Infantry
-Empire Pavise Co._C_75_4_1_-_-10_5_Blaze_Armored
-Empire Pegasus Co._D_60_1_2_10_-_6_Group Lance Attack_Flying
-Empire Wyvern Co._C_60_2_-_5_-_5_Reversal_Flying
-Empire Heavy Soldiers_B_75_5_1_5_-10_7_Line of Lances_Armored
-Empire Holy Magic Users_B_60_-_3_-_-_8_Blessing_Infantry
-Empire Raiders_B_75_-_-_-_5_7_Absorption_Infantry
-Imperial Guard_B_75_-_-_-_-_7_Blaze_Armored
-Empire Elite Wyvern Co._B_75_2_-_-_-_7_Assembly_Flying
-Black Eagle Heavy Axes_A_105_4_2_-_-10_10_Onslaught_Armored
-Black Eagle Cavalry_A_105_1_-_10_5_10_Linked Horses_Cavalry
-Black Eagle Pegasus Co._A_105_1_3_-_5_10_Retribution_Flying
-Kingdom Infantry_E_30_1_-_-_-_1_Lure_Infantry
-Kingdom Lance Co._E_30_-_-_-_5_1_Group Lance Attack_Infantry
-Kingdom Brawlers_E_30_-_-1_-_5_1_Disturbance_Infantry
-Kingdom Magic Corps_D_30_1_2_-_-_3_Group Ice_Infantry
-Kingdom Archers_D_30_1_-_5_-_3_Retribution_Infantry
-Kingdom Cavalry_D_45_2_-_-_-_3_Stride_Cavalry
-Kingdom Armored Co._D_60_3_-_-_-10_3_Impregnable Wall_Armored
-Kingdom Knights_C_60_2_1_-_-_5_Assault Troop_Cavalry
-Kingdom Snipers_C_60_1_1_5_-_5_Fusillade_Infantry
-Kingdom Magic Users_C_45_1_1_-_-_5_Resonant Ice_Infantry
-Kingdom Brave Lance Co._C_60_1_-_10_5_5_Onslaught_Infantry
-Kingdom Pegasus Co._D_60_1_2_-_-_6_Assembly_Flying
-Kingdom Wyvern Co._C_60_2_-_10_-_5_Recovery Roar_Flying
-Kingdom Heavy Soldiers_B_90_3_-_-_-10_7_Group Lance Attack_Armored
-Kingdom Holy Knights_B_75_1_3_-_-10_7_Linked Horses_Cavalry
-Kingdom Heavy Knights_B_90_3_-_5_-15_7_Sacred Shield_Cavalry
-Royal Guard_B_75_-_-_10_-10_7_Line of Lances_Armored
-Kingdom Priests_B_60_-_3_-_-5_7_Blessing_Infantry
-Blue Lion Knights_A_105_1_-_-_-10_10_Linked Horses_Cavalry
-Blue Lion Magic Corps_A_105_1_3_-_-10_10_Resonant Ice_Infantry
-Blue Lion Dancers_A_105_1_1_-_15_10_Dance of the Goddess_Infantry
-Alliance Infantry_E_30_-_-_5_5_1_Lure_Infantry
-Alliance Duelists_E_30_-_-_-_5_1_Mad Melee_Infantry
-Alliance Brawlers_E_30_-_-1_-_5_1_Disturbance_Infantry
-Alliance Magic Corps_D_30_-_2_-_5_3_Group Lightning_Infantry
-Alliance Archers_D_30_-_-_10_5_3_Poisoned Arrows_Infantry
-Alliance Cavalry_D_45_-_-_-_5_3_Assault Troop_Cavalry
-Alliance Armored Co._D_60_2_-_-_-5_3_Disturbance_Armored
-Alliance Knights_C_60_1_1_-_5_5_Blaze_Cavalry
-Alliance Snipers_C_60_-_-_10_5_5_Fusillade_Infantry
-Alliance Magic Users_C_45_-_2_-_5_5_Resonant Lightning_Infantry
-Alliance Veteran Duelists_C_60_1_-_-_5_5_Absorption_Infantry
-Alliance Pegasus Co._D_60_-_1_-_5_6_Assembly_Flying
-Alliance Wyvern Co._C_60_1_-_-_5_5_Impregnable Wall_Flying
-Alliance Pavise Co._B_90_4_1_-_-5_7_Group Lance Attack_Armored
-Alliance Physicians_B_60_-_2_-_5_7_Resonant White Magic_Infantry
-Alliance Sages_B_60_-_2_-_-10_7_Blessing_Infantry
-Alliance Master Archers_B_60_-_-_-_5_7_Flash-Fire Arrows_Infantry
-Alliance Guard_B_75_-_-_-_1_7_Poison Tactic_Armored
-Golden Deer Wyvern Co._A_105_1_-_-_5_10_Assault Troop_Flying
-Golden Deer Archers_A_105_-_1_15_10_10_Poison Tactic_Infantry
-Golden Deer Cavalry_A_105_3_2_-_-5_10_Linked Horses_Cavalry
-Supreme Armored Co._C_120_2_1_-_-10_10_Raging Flames_Armored
-King of Lions Corps_C_120_1_-_-_-5_10_Wave Attack_Infantry
-Immortal Corps_C_120_-_-_-_10_10_Ashes and Dust_Infantry
-Vestra Sorcery Engineers_C_75_-_2_-_5_7_Resonant Lightning_Infantry
-Aegir Astral Knights_B_105_-_-_-_15_7_Assault Troop_Cavalry
-Hevring Prayer Troops_B_75_-_3_-_-10_7_Blessing_Infantry
-Bergliez War Group_B_105_-_-_-_-10_7_Onslaught_Infantry
-Varley Archers_B_75_1_-_20_-10_7_Fusillade_Infantry
-Opera Co. Volunteers_B_75_-_-_10_10_10_Dance of the Goddess_Infantry
-Brigid Hunters_B_105_-_-_-_15_7_Poison Tactic_Infantry
-Duscur Heavy Soldiers_B_120_5_-_-_-15_7_Line of Lances_Armored
-Fraldarius Soldiers_B_105_2_-_-_-_7_Onslaught_Infantry
-Gaspard Knights_B_105_1_-_-_-5_7_Assault Troop_Cavalry
-Gautier Knights_B_105_-_-_-_15_7_Stride_Cavalry
-Church Soldiers_C_75_-_2_-_-_5_Resonant White Magic_Infantry
-School of Sorcery Soldiers_C_75_-_2_10_-_5_Resonant Flames_Infantry
-Galatea Pegasus Co._B_105_1_2_-_5_8_Lure_Flying
-Gloucester Knights_B_105_1_1_10_-_7_Assault Troop_Cavalry
-Leicester Mercenaries_B_105_-_-_10_-_7_Blaze_Infantry
-Victor Private Military_C_105_-_2_5_-_5_Assembly_Infantry
-Ordelia Sorcery Co._B_75_-_2_10_-_7_Resonant Lightning_Infantry
-Edmund Troops_B_105_-_-_30_-_7_Flash-Fire Arrows_Infantry
-Goneril Valkyries_B_105_2_1_10_-_7_Assault Troop_Flying
-Sauin Militia_C_75_-_-_10_5_5_Poisoned Arrows_Infantry
-Cichol Wyvern Co._A_105_2_1_10_-_10_Assault Troop_Flying
-Cethleann Monks_A_105_1_3_10_-_10_Resonant White Magic_Infantry
-Jeralt’s Mercenaries_E_75_-_-_-_5_1_Assault Troop_Infantry
-Reaper Knights_B_105_-_-_-_10_1_Assault Troop_Cavalry
-Secret Transport Force_B_105_1_1_-_10_8_Stride_Infantry
-Mockingbird’s Thieves_B_105_1_1_5_5_5_Absorption_Infantry
-Leicester Dicers Corps_B_105_1_1_-_-_5_Onslaught_Infantry
-Nuvelle Fliers Corps_B_105_-_3_-_5_8_Resonant Lightning_Flying
-Timotheos Magi Corps_B_105_-_1_5_-_7_Resonant Flames_Infantry
-Remire Militia_E_30_1_-_-_-_1_Disturbance_Infantry
-Empire Youths_E_30_-_-_5_-_1_Disturbance_Infantry
-Kingdom Youths_E_30_-_-_5_-_1_Disturbance_Infantry
-Alliance Youths_E_30_-_-_5_-_1_Disturbance_Infantry
-Duscur Infantry_E_30_1_-1_-_5_1_Disturbance_Infantry
-Almyra Mercenaries_E_30_-_-2_-_5_1_Fusillade_Infantry
-Brigid Mercenaries_E_30_-_-_5_-_1_Onslaught_Infantry
-Morfis Magic Corps_C_45_-_3_-_-_5_Resonant Lightning_Infantry
-Essar Research Group_E_60_-_-_20_-_1_Blessing_Infantry
-Holst’s Chosen_C_60_3_-_-_-_3_Assault Troop_Infantry
-Nuvelle Chamberlain Co._C_45_1_3_5_-_5_Battleground Cafe_Infantry
-Nuvelle Attendants Co._C_45_1_3_-_5_5_Absolute Defense_Infantry
-Nuvelle Stewards Co._C_45_1_3_5_1_10_Battleground Clean Up_Infantry
-Iron King’s Thieves_E_75_-_-_-_-_1_Disturbance_Infantry
-Gaspard Militia_E_75_-_-_-_-_1_Disturbance_Infantry
-Gaspard Knights_E_75_-_-_-_-_1_Assault Troop_Cavalry
-West Church Corps_E_75_-_1_-_-_1_Group Lightning_Infantry
-West Church Mercenaries_E_75_-_-_-_-_1_Onslaught_Infantry
-West Church Sages_E_75_-_2_-_-10_1_Group Lightning_Infantry
-West Church Pegasus Co._E_75_-_1_-_-_3_Disturbance_Flying
-West Church Knights_E_75_-_-_-_-_1_Disturbance_Cavalry
-Mysterious Infantry_E_75_-_-_-_-_1_Disturbance_Infantry
-Mysterious Magic Corps_E_75_-_1_-_-_1_Group Flames_Infantry
-Mysterious Magic Users_E_75_-_2_-_-5_1_Resonant Flames_Infantry
-Miklan Private Militia_E_75_1_-_5_-_1_Assault Troop_Infantry
-Reaper Infantry_E_75_-_-_-_10_1_Onslaught_Infantry
-Reaper Knights_E_75_-_-_-_10_1_Assault Troop_Cavalry
-Rampaging Villagers_E_75_-_-_-_-_1_Disturbance_Infantry
-Solon Subordinates_E_75_-_2_-_-5_1_Resonant Flames_Infantry
-Kronya Subordinates_E_75_-_-_-_20_1_Onslaught_Infantry
-Pallardó Bodyguards_E_75_-_-_-_-_1_Poison Tactic_Armored
-Rowe Knights_E_75_-_-_-_-_1_Linked Horses_Cavalry
-House Rowe Archers_E_75_-_-_-_-_1_Flash-Fire Arrows_Infantry
-Rowe Armored Co._E_75_1_-_-_-10_1_Group Lance Attack_Armored
-Rowe Cavalry_E_75_-_-_-_-_1_Assault Troop_Cavalry
-Daphnel Duelists_E_105_-_-_-_10_1_Onslaught_Infantry
-Almyra Wyvern Co._E_75_2_-_-5_10_1_Assault Troop_Flying
-Almyra Cavalry_E_75_-_-_-_10_1_Assault Troop_Cavalry
-Dark Infantry_E_75_-_-_-_-_1_Onslaught_Infantry
-Dark Magic Corps_E_75_-_2_-_-_1_Resonant Lightning_Infantry
-Einherjar_E_75_1_-_-_-10_1_Assault Troop_Infantry
-Enhanced Infantry_E_75_-_1_-_-5_1_Disturbance_Infantry
-Enhanced Heavy Co._E_75_2_-_-_-10_1_Group Lance Attack_Armored
-Enhanced Cavalry_E_75_1_-_-_-10_1_Linked Horses_Cavalry
-Enhanced Wyvern Co._E_75_-_2_-_-10_3_Poison Tactic_Flying
-Ancient Infantry_E_75_-_1_-_-5_1_Disturbance_Infantry
-Ancient Armored Co._E_75_1_-_-_-5_1_Onslaught_Armored
-Ancient Cavalry_E_75_-_-_-_-5_1_Assault Troop_Cavalry
-Ancient Wyvern Co._E_75_-_1_-_-5_3_Lure_Flying
-Phantasmal Cavalry_E_75_-_-_-_-_1_Assault Troop_Cavalry
-Phantasmal Infantry_E_75_-_-_-_-_1_Disturbance_Infantry
-Phantasmal Wyvern Co._E_75_-_2_-_-_1_Assault Troop_Flying
-Duscur Infantry_E_75_1_-_-_-10_1_Onslaught_Infantry
-Duscur Cavalry_E_75_-_-_-_-10_1_Assault Troop_Cavalry
-Dominic Cavalry_E_75_-_-_10_-_1_Assault Troop_Cavalry
-Merchant Military_E_75_-_-_-_-_1_Poison Tactic_Infantry
-Thieves_E_75_-_-_-_-_1_Disturbance_Infantry
-Rogues_E_75_-_-_-_-_1_Disturbance_Infantry
-Bandits_E_75_-_-_-_-_1_Disturbance_Infantry
-Pirates_E_75_-_-_-_-_1_Disturbance_Infantry
-Arundel Magic Corps_E_75_1_2_-_-_1_Resonant Flames_Infantry
-Mysterious Wyvern Co._E_75_1_-_-_5_1_Disturbance_Flying
-Dark Wyvern Co._E_75_1_-_-_5_1_Disturbance_Flying
-Ancient Sorcerers_E_75_-_2_-_-5_1_Resonant Flames_Infantry
-Enhanced Sorcerers_E_75_-_4_-_-5_1_Resonant Lightning_Infantry
-Phantasmal Magic Corps_E_75_-_3_-_-_1_Resonant Flames_Infantry
-Phantasmal Archers_E_75_-_-_10_-_1_Disturbance_Infantry
-Gaspard Archers_E_75_-_-_-_-_1_Disturbance_Infantry
-Thief Marksmen_E_75_-_-_5_-_1_Disturbance_Infantry
-Cliff Bandit Marksmen_E_75_-_-_5_-_1_Disturbance_Infantry
-Pirate Marksmen_E_75_-_-_5_-_1_Disturbance_Infantry
-West Church Archers_E_75_-_-_5_-_1_Fusillade_Infantry
-Flame Emperor Co._C_75_2_1_-5_-10_5_Raging Flames_Infantry
-Thief Pegasus Corps_E_60_-_3_-_1_5_Disturbance_Flying
-Pirate Pegasus Corps_E_60_-_3_-_1_5_Disturbance_Flying
-Bandit Pegasus Corps_E_60_-_3_-_1_5_Disturbance_Flying
-Dahlman Guard_E_105_3_3_20_-_10_Resonant Flames_Armored
-Dahlman Magic Co._E_75_2_3_10_-_5_Group Flames_Infantry
-Dahlman Armored Group_E_75_3_-_10_-_5_Assault Troop_Armored
-Dahlman PMC_E_75_2_-_10_-_3_Onslaught_Infantry
+Church of Seiros Soldiers_E_30_-_-_5_-_-_3_3_1_Disturbance_Infantry
+Seiros Mercenaries_E_30_3_-2_10_-_-_2_-_1_Onslaught_Infantry
+Seiros Holy Monks_E_30_-1_-_10_-_-_-_3_1_Stride_Infantry
+Seiros Sacred Monks_E_30_-1_-_10_-_-_-_4_1_Resonant White Magic_Infantry
+Seiros Brawlers_E_30_4_-2_-_-_10_-_-1_1_Disturbance_Infantry
+Seiros Magic Corps_D_30_-2_3_5_-_-_-_5_3_Group Flames_Infantry
+Seiros Archers_D_45_2_-_15_-_10_-_-_3_Fusillade_Infantry
+Seiros Armored Co._D_60_4_-_-_-_-10_4_-_3_Onslaught_Armored
+Seiros Pegasus Co._D_60_4_-_-_-_5_2_5_5_Assembly_Flying
+Knights of Seiros_C_60_4_-1_-_-_5_3_3_5_Blaze_Cavalry
+Holy Knights of Seiros_B_75_7_-2_-_-_-_5_7_7_Assault Troop_Cavalry
+Indech Sword Fighters_A_105_8_-2_20_10_-_4_-_10_Retribution_Infantry
+Macuil Evil Repelling Co._A_105_-_7_30_-_-_1_6_10_Resonant Lightning_Infantry
+Empire Infantry_E_30_-_-2_10_-_-_3_-_1_Lure_Infantry
+Empire Warriors_E_30_4_-2_-_-_-_-_-_1_Random Shot_Infantry
+Empire Brawlers_E_30_4_-2_-_-_10_-_-1_1_Disturbance_Infantry
+Empire Magic Corps_D_30_-2_4_-_-_-_-_4_3_Group Flames_Infantry
+Empire Archers_D_30_3_-2_15_-_-_3_-_3_Fusillade_Infantry
+Empire Cavalry_D_45_4_-2_-_-_5_4_-_3_Assault Troop_Cavalry
+Empire Armored Co._D_60_3_-2_5_-_-10_5_-_3_Impregnable Wall_Armored
+Empire Knights_C_60_5_-2_5_-_-_4_-_5_Blaze_Cavalry
+Empire Snipers_C_60_5_-2_10_-_-_3_-_5_Flash-Fire Arrows_Infantry
+Empire Magic Users_C_45_-2_5_-_10_-_-_4_5_Resonant Flames_Infantry
+Empire Pavise Co._C_75_2_-2_5_-_-10_6_1_5_Blaze_Armored
+Empire Pegasus Co._D_60_4_-_15_-_-_3_4_6_Group Lance Attack_Flying
+Empire Wyvern Co._C_60_5_-2_5_10_-_4_-_5_Reversal_Flying
+Empire Heavy Soldiers_B_75_6_-2_15_-_-10_9_1_7_Line of Lances_Armored
+Empire Holy Magic Users_B_60_-2_6_-_-_-_4_7_8_Blessing_Infantry
+Empire Raiders_B_75_7_-_-_-_10_4_-_7_Absorption_Infantry
+Imperial Guard_B_75_7_-2_-_10_-_4_-_7_Blaze_Armored
+Empire Elite Wyvern Co._B_75_8_-2_-_10_-_6_-_7_Assembly_Flying
+Black Eagle Heavy Axes_A_105_7_-_-_10_-10_8_2_10_Onslaught_Armored
+Black Eagle Cavalry_A_105_7_-_20_-_5_5_-_10_Linked Horses_Cavalry
+Black Eagle Pegasus Co._A_105_7_-_-_10_10_5_7_10_Retribution_Flying
+Kingdom Infantry_E_30_3_-2_5_-_-_3_-_1_Lure_Infantry
+Kingdom Lance Co._E_30_3_-2_-_-_10_-_-_1_Group Lance Attack_Infantry
+Kingdom Brawlers_E_30_4_-2_-_-_10_-_-1_1_Disturbance_Infantry
+Kingdom Magic Corps_D_30_-2_3_5_-_-_1_4_3_Group Ice_Infantry
+Kingdom Archers_D_30_4_-2_10_-_-_3_-_3_Retribution_Infantry
+Kingdom Cavalry_D_45_4_-2_5_-_-_4_-_3_Stride_Cavalry
+Kingdom Armored Co._D_60_3_-2_5_-_-10_5_-_3_Impregnable Wall_Armored
+Kingdom Knights_C_60_5_-2_5_-_-_4_1_5_Assault Troop_Cavalry
+Kingdom Snipers_C_60_3_-2_15_-_-_3_1_5_Fusillade_Infantry
+Kingdom Magic Users_C_45_-2_5_-_-_5_1_3_5_Resonant Ice_Infantry
+Kingdom Brave Lance Co._C_60_4_-2_20_-_10_3_-_5_Onslaught_Infantry
+Kingdom Pegasus Co._D_60_4_-_5_-_5_3_4_6_Assembly_Flying
+Kingdom Wyvern Co._C_60_5_-2_15_5_-_4_-_5_Recovery Roar_Flying
+Kingdom Heavy Soldiers_B_90_4_-2_5_5_-10_7_-_7_Group Lance Attack_Armored
+Kingdom Holy Knights_B_75_7_-2_5_-_-10_5_7_7_Linked Horses_Cavalry
+Kingdom Heavy Knights_B_90_4_-2_15_-_-15_7_-_7_Sacred Shield_Armored
+Royal Guard_B_75_6_-_20_10_-10_4_-_7_Line of Lances_Armored
+Kingdom Priests_B_60_-_5_5_-_-5_-_7_7_Blessing_Infantry
+Blue Lion Knights_A_105_7_-2_5_15_-10_5_-_10_Linked Horses_Cavalry
+Blue Lion Magic Corps_A_105_-2_7_5_-_-10_5_7_10_Resonant Ice_Infantry
+Blue Lion Dancers_A_105_-1_-1_-_-_20_3_3_10_Dance of the Goddess_Infantry
+Alliance Infantry_E_30_-_-2_9_-_10_-_-_1_Lure_Infantry
+Alliance Duelists_E_30_-_-2_-_9_10_-_-_1_Mad Melee_Infantry
+Alliance Brawlers_E_30_4_-2_-_-_10_-_-1_1_Disturbance_Infantry
+Alliance Magic Corps_D_30_-2_3_-_-_10_-_4_3_Group Lightning_Infantry
+Alliance Archers_D_30_3_-2_14_-_10_-_-_3_Poisoned Arrows_Infantry
+Alliance Cavalry_D_45_4_-2_-_-_10_-_-_3_Assault Troop_Cavalry
+Alliance Armored Co._D_60_3_-2_5_-_-5_4_-_3_Disturbance_Armored
+Alliance Knights_C_60_4_-2_-_-_10_3_1_5_Blaze_Cavalry
+Alliance Snipers_C_60_3_-2_15_-_10_-_-_5_Fusillade_Infantry
+Alliance Magic Users_C_45_-2_4_-_-_10_-_4_5_Resonant Lightning_Infantry
+Alliance Veteran Duelists_C_60_4_-2_-_-_10_3_-_5_Absorption_Infantry
+Alliance Pegasus Co._D_60_4_-_5_-_10_2_3_6_Assembly_Flying
+Alliance Wyvern Co._C_60_5_-2_-_5_10_3_-_5_Impregnable Wall_Flying
+Alliance Pavise Co._B_90_4_-2_5_-_-5_8_1_7_Group Lance Attack_Armored
+Alliance Physicians_B_60_-_3_-_-_10_-_4_7_Resonant White Magic_Infantry
+Alliance Sages_B_60_-_8_5_5_-10_-_6_7_Blessing_Infantry
+Alliance Master Archers_B_60_4_-1_-_15_10_4_-_7_Flash-Fire Arrows_Infantry
+Alliance Guard_B_75_5_-_-_10_5_4_-_7_Poison Tactic_Armored
+Golden Deer Wyvern Co._A_105_6_-2_5_-_10_3_-_10_Assault Troop_Flying
+Golden Deer Archers_A_105_2_-2_25_-_15_2_3_10_Poison Tactic_Infantry
+Golden Deer Cavalry_A_105_8_-2_5_-_-5_7_2_10_Linked Horses_Cavalry
+Supreme Armored Co._C_120_7_6_5_-_-10_6_5_10_Raging Flames_Armored
+King of Lions Corps_C_120_10_-2_5_15_-5_5_-_10_Wave Attack_Infantry
+Immortal Corps_C_120_8_-2_-_-_15_4_-_10_Ashes and Dust_Infantry
+Vestra Sorcery Engineers_C_75_-2_7_-_-_10_4_6_7_Resonant Lightning_Infantry
+Aegir Astral Knights_B_105_7_-2_-_-_20_2_2_7_Assault Troop_Cavalry
+Hevring Prayer Troops_B_75_-_7_5_-_-10_4_7_7_Blessing_Infantry
+Bergliez War Group_B_105_8_-_5_-_-10_4_-_7_Onslaught_Infantry
+Varley Archers_B_75_-_-_30_-_-10_5_-_7_Fusillade_Infantry
+Opera Co. Volunteers_B_75_-_-_20_-_15_4_-_10_Dance of the Goddess_Infantry
+Brigid Hunters_B_105_4_-2_-_10_20_-_-_7_Poison Tactic_Infantry
+Duscur Heavy Soldiers_B_120_8_-2_5_-_-15_10_-_7_Line of Lances_Armored
+Fraldarius Soldiers_B_105_7_-_-_20_-_6_-_7_Onslaught_Infantry
+Gaspard Knights_B_105_-_-_-_-_-_2_-_1_Assault Troop_Cavalry
+Gautier Knights_B_105_7_-2_-_-_20_5_-_7_Stride_Cavalry
+Church Soldiers_C_75_-_3_5_-_-_-_6_5_Resonant White Magic_Infantry
+School of Sorcery Soldiers_C_75_-2_6_20_-_-_-_4_5_Resonant Flames_Infantry
+Galatea Pegasus Co._B_105_7_-_5_-_10_5_6_8_Lure_Flying
+Gloucester Knights_B_105_6_6_15_-_-_5_5_7_Assault Troop_Cavalry
+Leicester Mercenaries_B_105_7_-2_20_15_-_4_-_7_Blaze_Infantry
+Victor Private Military_C_105_6_-_15_-_-_2_4_5_Assembly_Infantry
+Ordelia Sorcery Co._B_75_-1_8_20_-_-_-_6_7_Resonant Lightning_Infantry
+Edmund Troops_B_105_5_5_40_-_-_2_2_7_Flash-Fire Arrows_Infantry
+Goneril Valkyries_B_105_8_-2_20_15_-_6_1_7_Assault Troop_Flying
+Sauin Militia_C_75_1_-_20_-_10_2_-_5_Poisoned Arrows_Infantry
+Cichol Wyvern Co._A_105_7_-_15_15_5_6_1_10_Assault Troop_Flying
+Cethleann Monks_A_105_-_6_20_-_-_1_7_10_Resonant White Magic_Infantry
+Jeralt’s Mercenaries_E_75_3_-_-_10_15_-_-_1_Assault Troop_Infantry
+Reaper Knights_B_105_4_-2_-_-_15_2_-_1_Assault Troop_Cavalry
+Secret Transport Force_B_105_3_-_-_-_15_5_5_8_Stride_Infantry
+Mockingbird’s Thieves_B_105_5_5_10_10_10_3_3_5_Absorption_Infantry
+Leicester Dicers Corps_B_105_7_7_5_-_-_5_5_5_Onslaught_Infantry
+Nuvelle Fliers Corps_B_105_-_7_5_-_10_-_7_8_Resonant Lightning_Flying
+Timotheos Magi Corps_B_105_-_8_10_10_-_2_5_7_Resonant Flames_Infantry
+Remire Militia_E_30_-_-_-_-_-_3_-_1_Disturbance_Infantry
+Empire Youths_E_30_-_-_10_-_-_-_-_1_Disturbance_Infantry
+Kingdom Youths_E_30_-_-_10_-_-_-_-_1_Disturbance_Infantry
+Alliance Youths_E_30_-_-_10_-_-_-_-_1_Disturbance_Infantry
+Duscur Infantry_E_30_3_-_-_-_-10_3_-_1_Disturbance_Infantry
+Almyra Mercenaries_E_30_5_-_-_-_10_-_-2_1_Fusillade_Infantry
+Brigid Mercenaries_E_30_3_-_10_10_-_-_-_1_Onslaught_Infantry
+Morfis Magic Corps_C_45_-2_5_-_-_-_2_5_5_Resonant Lightning_Infantry
+Essar Research Group_E_60_5_5_30_-_-_-_-_1_Blessing_Infantry
+Holst’s Chosen_C_60_7_-_5_5_-_7_-_3_Assault Troop_Infantry
+Nuvelle Chamberlain Co._C_45_8_-_10_10_-_1_7_5_Battleground Cafe_Infantry
+Nuvelle Attendants Co._C_45_-_8_-_10_10_1_7_5_Absolute Defense_Infantry
+Nuvelle Stewards Co._C_45_5_5_10_10_5_1_7_10_Battleground Clean Up_Infantry
+Iron King’s Thieves_E_75_-1_-_-_-_-_2_-_1_Disturbance_Infantry
+Gaspard Militia_E_75_-1_-_-_-_-_2_-_1_Disturbance_Infantry
+Gaspard Knights_E_75_-_-_-_-_-_2_-_1_Assault Troop_Cavalry
+West Church Corps_E_75_-_3_-_-_-_2_3_1_Group Lightning_Infantry
+West Church Mercenaries_E_75_3_-_-_-_-_2_-_1_Onslaught_Infantry
+West Church Sages_E_75_-_4_-_-_-10_2_4_1_Group Lightning_Infantry
+West Church Pegasus Co._E_75_3_-_-_-_-_2_3_3_Disturbance_Flying
+West Church Knights_E_75_4_-1_-_-_-_2_-_1_Disturbance_Cavalry
+Mysterious Infantry_E_75_3_-_-_-_-_2_-_1_Disturbance_Infantry
+Mysterious Magic Corps_E_75_-_3_-_-_-_2_3_1_Group Flames_Infantry
+Mysterious Magic Users_E_75_-5_4_-_-_-5_2_4_1_Resonant Flames_Infantry
+Miklan Private Militia_E_75_3_-2_15_-_-_3_-_1_Assault Troop_Infantry
+Reaper Infantry_E_75_-_-_-_-_15_2_-_1_Onslaught_Infantry
+Reaper Knights_E_75_4_-2_-_-_15_2_-_1_Assault Troop_Cavalry
+Rampaging Villagers_E_75_3_-_-_-_-_2_-_1_Disturbance_Infantry
+Solon Subordinates_E_75_-2_5_-_-_-5_2_4_1_Resonant Flames_Infantry
+Kronya Subordinates_E_75_-_-_-_-_25_-_-_1_Onslaught_Infantry
+Pallardó Bodyguards_E_75_-_-_-_-_-_2_-_1_Poison Tactic_Armored
+Rowe Knights_E_75_5_-1_-_-_-_2_-_1_Linked Horses_Cavalry
+House Rowe Archers_E_75_4_-_-_-_-_2_-_1_Flash-Fire Arrows_Infantry
+Rowe Armored Co._E_75_3_-_-_-_-10_3_-_1_Group Lance Attack_Armored
+Rowe Cavalry_E_75_4_-_-_-_-_2_-_1_Assault Troop_Cavalry
+Daphnel Duelists_E_105_5_-2_-_-_15_-_-_1_Onslaught_Infantry
+Almyra Wyvern Co._E_75_6_-2_-5_-_15_4_-_1_Assault Troop_Flying
+Almyra Cavalry_E_75_4_-2_-_-_15_2_-_1_Assault Troop_Cavalry
+Dark Infantry_E_75_-_-_-_-_-_2_-_1_Onslaught_Infantry
+Dark Magic Corps_E_75_-1_4_-_-_-_2_4_1_Resonant Lightning_Infantry
+Einherjar_E_75_6_-_-_-_-10_3_-_1_Assault Troop_Infantry
+Enhanced Infantry_E_75_4_-_-_-_-5_2_3_1_Disturbance_Infantry
+Enhanced Heavy Co._E_75_3_-_-_-_-10_4_-_1_Group Lance Attack_Armored
+Enhanced Cavalry_E_75_5_-_-_-_-10_3_-_1_Linked Horses_Cavalry
+Enhanced Wyvern Co._E_75_4_-_-_-_-10_2_4_3_Poison Tactic_Flying
+Ancient Infantry_E_75_4_-_-_-_-5_2_3_1_Disturbance_Infantry
+Ancient Armored Co._E_75_3_-_-_-_-5_3_-_1_Onslaught_Armored
+Ancient Cavalry_E_75_5_-_-_-_-5_2_-_1_Assault Troop_Cavalry
+Ancient Wyvern Co._E_75_4_-_-_-_-5_2_3_3_Lure_Flying
+Phantasmal Cavalry_E_75_4_-_-_-_-_2_-_1_Assault Troop_Cavalry
+Phantasmal Infantry_E_75_-_-_-_-_-_2_-_1_Disturbance_Infantry
+Phantasmal Wyvern Co._E_75_4_-_-_-_-_2_2_1_Assault Troop_Flying
+Duscur Infantry_E_75_3_-_-_-_-10_3_-_1_Onslaught_Infantry
+Duscur Cavalry_E_75_4_-_-_-_-10_2_-_1_Assault Troop_Cavalry
+Dominic Cavalry_E_75_3_-_20_-_-_2_-_1_Assault Troop_Cavalry
+Merchant Military_E_75_-1_2_5_-_-_2_-_1_Poison Tactic_Infantry
+Thieves_E_75_2_-_5_-_5_2_-_1_Disturbance_Infantry
+Rogues_E_75_2_-_5_-_5_2_-_1_Disturbance_Infantry
+Bandits_E_75_2_-_5_-_5_2_-_1_Disturbance_Infantry
+Pirates_E_75_2_-_5_-_5_2_-_1_Disturbance_Infantry
+Arundel Magic Corps_E_75_-_6_-_-_-_5_6_1_Resonant Flames_Infantry
+Mysterious Wyvern Co._E_75_3_-_-_-_15_3_-_1_Disturbance_Flying
+Dark Wyvern Co._E_75_3_-_-_-_15_3_-_1_Disturbance_Flying
+Ancient Sorcerers_E_75_-5_4_-_-_-5_2_4_1_Resonant Flames_Infantry
+Enhanced Sorcerers_E_75_-5_6_-_-_-5_2_6_1_Resonant Lightning_Infantry
+Phantasmal Magic Corps_E_75_-_5_-_-_-_-_5_1_Resonant Flames_Infantry
+Phantasmal Archers_E_75_3_-_20_-_-_2_-_1_Disturbance_Infantry
+Gaspard Archers_E_75_-1_-_-_-_-_2_-_1_Disturbance_Infantry
+Thief Marksmen_E_75_-1_-_10_-_-_2_-_1_Disturbance_Infantry
+Cliff Bandit Marksmen_E_75_-1_-_10_-_-_2_-_1_Disturbance_Infantry
+Pirate Marksmen_E_75_-1_-_10_-_-_2_-_1_Disturbance_Infantry
+West Church Archers_E_75_3_-_10_-_-_2_-_1_Fusillade_Infantry
+Flame Emperor Co._C_75_5_4_-5_5_-10_4_3_5_Raging Flames_Infantry
+Thief Pegasus Corps_E_60_4_-_-_-_5_2_5_5_Disturbance_Flying
+Pirate Pegasus Corps_E_60_4_-_-_-_5_2_5_5_Disturbance_Flying
+Bandit Pegasus Corps_E_60_4_-_-_-_5_2_5_5_Disturbance_Flying
+Dahlman Guard_E_105_-_8_25_-_-_7_7_10_Resonant Flames_Armored
+Dahlman Magic Co._E_75_-_6_15_-_-_4_5_5_Group Flames_Infantry
+Dahlman Armored Group_E_75_7_-_15_-_-_8_-_5_Assault Troop_Armored
+Dahlman PMC_E_75_6_-_15_-_-_6_-_3_Onslaught_Infantry

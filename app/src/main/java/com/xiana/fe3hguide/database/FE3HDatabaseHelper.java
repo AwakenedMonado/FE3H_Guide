@@ -18,7 +18,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
 
     private final Context context;
     private static final String DB_NAME = "fe3h";       // name of the database
-    private static final int DB_VERSION = 6;            // version of the database
+    private static final int DB_VERSION = 7;            // version of the database
 
     public FE3HDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -66,6 +66,10 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
             createClassesTable(db);
             db.execSQL("DROP TABLE IF EXISTS Abilities");
             createAbilitiesTable(db);
+        }
+        if (oldVersion < 7) {
+            db.execSQL("DROP TABLE IF EXISTS Battalions");
+            createBattalionsTable(db);
         }
     }
 
@@ -2781,10 +2785,13 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 + "name TEXT PRIMARY KEY, "
                 + "authorityLevel TEXT, "
                 + "endurance TEXT, "
+                + "str TEXT, "
+                + "mag TEXT, "
+                + "hit TEXT, "
+                + "crit TEXT, "
+                + "avo TEXT, "
                 + "prt TEXT, "
                 + "rsl TEXT, "
-                + "hit TEXT, "
-                + "avo TEXT, "
                 + "cha TEXT, "
                 + "gambit TEXT, "
                 + "movementType TEXT);");
@@ -2800,13 +2807,16 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 values.put("name", parts[0]);
                 values.put("authorityLevel", parts[1]);
                 values.put("endurance", parts[2]);
-                values.put("prt", parts[3]);
-                values.put("rsl", parts[4]);
+                values.put("str", parts[3]);
+                values.put("mag", parts[4]);
                 values.put("hit", parts[5]);
-                values.put("avo", parts[6]);
-                values.put("cha", parts[7]);
-                values.put("gambit", parts[8]);
-                values.put("movementType", parts[9]);
+                values.put("crit", parts[6]);
+                values.put("avo", parts[7]);
+                values.put("prt", parts[8]);
+                values.put("rsl", parts[9]);
+                values.put("cha", parts[10]);
+                values.put("gambit", parts[11]);
+                values.put("movementType", parts[12]);
                 db.insert("Battalions", null, values);
             }
         } catch (IOException e) {
