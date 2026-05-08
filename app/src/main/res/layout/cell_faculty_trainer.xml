@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/elevation1"
+    android:minHeight="80dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imageView_trainer_portrait"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/textView_trainer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/mainText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_skill_1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:id="@+id/imageView_skill_2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView_skill_3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView_skill_4"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView_skill_5"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/badge_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P1"
+                android:textSize="11sp"
+                android:textColor="@color/mainText"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/green_tea"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/badge_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AM"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/faction_blue_lions"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/badge_vw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VW"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/faction_golden_deer"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/badge_ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SS"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/faction_church"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/badge_cf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CF"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/faction_black_eagles"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

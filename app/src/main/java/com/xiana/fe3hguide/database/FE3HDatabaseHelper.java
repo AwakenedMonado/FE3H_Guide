@@ -18,7 +18,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
 
     private final Context context;
     private static final String DB_NAME = "fe3h";       // name of the database
-    private static final int DB_VERSION = 7;            // version of the database
+    private static final int DB_VERSION = 10;            // version of the database
 
     public FE3HDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -42,6 +42,8 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         createSupportsTable(db);
         createGambitsTable(db);
         createBattalionsTable(db);
+        createFacultyTrainingTable(db);
+        createLectureQuestionsTable(db);
     }
 
     @Override
@@ -70,6 +72,16 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         if (oldVersion < 7) {
             db.execSQL("DROP TABLE IF EXISTS Battalions");
             createBattalionsTable(db);
+        }
+        if (oldVersion < 8) {
+            createFacultyTrainingTable(db);
+        }
+        if (oldVersion < 9) {
+            db.execSQL("DROP TABLE IF EXISTS FacultyTraining");
+            createFacultyTrainingTable(db);
+        }
+        if (oldVersion < 10) {
+            createLectureQuestionsTable(db);
         }
     }
 
@@ -2818,6 +2830,72 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 values.put("gambit", parts[11]);
                 values.put("movementType", parts[12]);
                 db.insert("Battalions", null, values);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void createFacultyTrainingTable(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE FacultyTraining ( "
+                + "name TEXT PRIMARY KEY, "
+                + "skills TEXT, "
+                + "part1Routes TEXT, "
+                + "part2Routes TEXT);");
+
+        String line = null;
+        InputStream is = context.getResources().openRawResource(R.raw.faculty_training);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+                String[] parts = line.split("_", 4);
+                ContentValues values = new ContentValues();
+                values.put("name", parts[0]);
+                values.put("skills", parts[1]);
+                values.put("part1Routes", parts[2]);
+                values.put("part2Routes", parts[3]);
+                db.insert("FacultyTraining", null, values);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void createLectureQuestionsTable(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE LectureQuestions ( "
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "characterName TEXT, "
+                + "question TEXT, "
+                + "bestAnswer TEXT, "
+                + "phase TEXT);");
+
+        String line = null;
+        InputStream is = context.getResources().openRawResource(R.raw.lecture_questions);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+                String[] parts = line.split("~", 4);
+                if (parts.length < 4) continue;
+                ContentValues values = new ContentValues();
+                values.put("characterName", parts[0]);
+                values.put("question", parts[1]);
+                values.put("bestAnswer", parts[2]);
+                values.put("phase", parts[3]);
+                db.insert("LectureQuestions", null, values);
             }
         } catch (IOException e) {
             e.printStackTrace();

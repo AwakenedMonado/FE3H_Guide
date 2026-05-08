@@ -39,6 +39,16 @@
             android:icon="@drawable/ic_menu_abilities"
             android:title="@string/nav_abilities" />
 
+        <item
+            android:id="@+id/nav_faculty_training"
+            android:icon="@drawable/ic_menu_classes"
+            android:title="@string/nav_faculty_training" />
+
+        <item
+            android:id="@+id/nav_lecture_questions"
+            android:icon="@drawable/ic_menu_characters"
+            android:title="@string/nav_lecture_questions" />
+
         <item android:title="@string/nav_secondary_group">
             <menu>
                 <group android:checkableBehavior="single">

@@ -1,0 +1,41 @@
+Manuela_Sword|Faith|Flying_All_All
+Hanneman_Bow|Reason|Riding_All_All
+Seteth_Sword|Lance|Axe|Authority|Flying_All_AM|VW|SS
+Flayn_Lance|Faith_None_AM|VW|SS
+Alois_Axe|Brawling|Heavy Armor_All_AM|VW|SS
+Catherine_Sword|Brawling_All_AM|VW|SS
+Shamir_Lance|Bow_All_AM|VW|SS
+Gilbert_Lance|Axe|Heavy Armor|Riding_All_AM
+Cyril_Lance|Axe|Bow|Riding|Flying_None_AM|VW|SS
+Jeralt_Lance|Authority|Riding_All_None
+Jeritza_Sword|Lance|Brawling|Riding_CF_CF
+Anna_Sword|Axe|Bow|Faith_All_All
+Rhea_Sword|Brawling|Reason|Faith_All_SS
+Edelgard_Sword|Axe|Heavy Armor|Authority_None_CF
+Hubert_Bow|Reason|Authority_None_CF
+Ferdinand_Sword|Lance|Axe|Riding_None_All
+Linhardt_Reason|Faith_None_All
+Caspar_Axe|Brawling_None_All
+Bernadetta_Lance|Bow_None_All
+Dorothea_Sword|Reason_None_All
+Petra_Sword|Axe|Bow|Riding_None_All
+Dimitri_Sword|Lance|Authority_None_AM
+Dedue_Lance|Axe|Brawling|Heavy Armor_None_AM
+Felix_Sword|Bow|Brawling_None_All
+Annette_Axe|Reason|Authority_None_All
+Mercedes_Reason|Faith_None_All
+Ashe_Axe|Bow_None_All
+Sylvain_Lance|Axe|Riding_None_All
+Ingrid_Sword|Lance|Riding|Flying_None_All
+Claude_Sword|Bow|Authority|Riding|Flying_None_VW
+Hilda_Lance|Axe_None_All
+Raphael_Axe|Brawling|Heavy Armor_None_All
+Lysithea_Reason|Faith|Authority_None_All
+Marianne_Sword|Faith|Riding|Flying_None_All
+Lorenz_Lance|Reason|Riding_None_All
+Ignatz_Sword|Bow|Authority_None_All
+Leonie_Lance|Bow|Riding_None_All
+Yuri_Sword|Bow|Reason|Faith|Authority_None_All
+Balthus_Sword|Brawling|Heavy Armor_None_All
+Constance_Sword|Reason|Authority|Flying_None_All
+Hapi_Faith|Riding|Flying_None_All

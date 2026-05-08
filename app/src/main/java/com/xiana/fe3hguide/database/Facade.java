@@ -9,7 +9,9 @@ import com.xiana.fe3hguide.model.Battalion;
 import com.xiana.fe3hguide.model.Character;
 import com.xiana.fe3hguide.model.CombatArt;
 import com.xiana.fe3hguide.model.CombatArtClassMastery;
+import com.xiana.fe3hguide.model.FacultyTrainer;
 import com.xiana.fe3hguide.model.Gambit;
+import com.xiana.fe3hguide.model.LectureQuestion;
 import com.xiana.fe3hguide.model.InGameClass;
 import com.xiana.fe3hguide.model.Spell;
 import com.xiana.fe3hguide.model.TeaTimeInfo;
@@ -28,6 +30,8 @@ public class Facade {
     private static DAOSupports daoSupports;
     private static DAOTeaTime daoTeaTime;
     private static DAOBattalions daoBattalions;
+    private static DAOFacultyTraining daoFacultyTraining;
+    private static DAOLectureQuestions daoLectureQuestions;
 
     private Facade(){
     }
@@ -43,6 +47,8 @@ public class Facade {
             daoSupports = new DAOSupports(db);
             daoTeaTime = new DAOTeaTime(db);
             daoBattalions = new DAOBattalions(db);
+            daoFacultyTraining = new DAOFacultyTraining(db);
+            daoLectureQuestions = new DAOLectureQuestions(db);
 
             instance = new Facade();
         }
@@ -135,6 +141,12 @@ public class Facade {
     public Battalion getBattalion(String name) { return daoBattalions.getBattalion(name); }
 
     public Gambit getGambit(String name) { return daoBattalions.getGambit(name); }
+
+    /** DAOFacultyTraining methods **/
+    public List<FacultyTrainer> getFacultyTrainers() { return daoFacultyTraining.getFacultyTrainers(); }
+
+    /** DAOLectureQuestions methods **/
+    public List<LectureQuestion> getLectureQuestions() { return daoLectureQuestions.getLectureQuestions(); }
 
     /** DAOTeaTime methods **/
     public ArrayList<String> getAllNamesButByleth(){
