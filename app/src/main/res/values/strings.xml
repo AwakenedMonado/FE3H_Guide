@@ -157,6 +157,23 @@
     <string name="nav_battalions">Battalions</string>
     <string name="nav_faculty_training">Faculty Training</string>
     <string name="nav_lecture_questions">Lecture Questions</string>
+    <string name="nav_weapons">Weapons</string>
+    <string-array name="weapon_sort_options">
+        <item>Alphabetical</item>
+        <item>Mt: High → Low</item>
+        <item>Hit: High → Low</item>
+        <item>Crit: High → Low</item>
+        <item>Wt: Low → High</item>
+        <item>Uses: High → Low</item>
+    </string-array>
+    <string-array name="weapon_type_options">
+        <item>All Types</item>
+        <item>Sword</item>
+        <item>Lance</item>
+        <item>Axe</item>
+        <item>Bow</item>
+        <item>Gauntlet</item>
+    </string-array>
     <string-array name="faculty_skill_options">
         <item>All Skills</item>
         <item>Sword</item>
@@ -172,6 +189,10 @@
         <item>Flying</item>
     </string-array>
     <string name="nav_abilities">Abilities</string>
+    <string name="battalion_type_infantry">Infantry</string>
+    <string name="battalion_type_cavalry">Cavalry</string>
+    <string name="battalion_type_armored">Armored</string>
+    <string name="battalion_type_flying">Flying</string>
     <string name="endurance">Endurance</string>
     <string name="prt">Prt</string>
     <string name="rsl">Rsl</string>

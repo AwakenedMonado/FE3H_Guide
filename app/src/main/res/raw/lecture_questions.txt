@@ -13,13 +13,13 @@ Petra~As I am fighting more, my arrows are decreasing in quality...~New bowstrin
 Dorothea~You know how sometimes an ordinary girl can be more popular than an exceptional beauty?~Fancy meals are boring if you eat them every day.~pre
 Dorothea~Songs are so powerless, Professor...~Some songs have the power to end conflict.~post
 Caspar~Pretty soon I'll have eaten everything the dining hall has to offer...~You should just enjoy what you've got.~pre
-Caspar~I think it's time you finally gave me a nickname!~You actually have one, but it's too scary to say out loud.~pre
+Caspar~I think it's time you finally gave me a nickname!~You actually have one, but it's too scary to say out loud.~post
 Dimitri~No matter the weapon, it cannot be wielded properly...~Try focusing on one skill at a time, at least for a while.~pre
 Dimitri~Those from the northern Faerghus are used to the frigid cold...~Cooling off in a nearby river is always a good option.~post
 Sylvain~I've been trying to win the heart of this girl...~Stay away for a while so she starts to miss you.~pre
 Sylvain~All this savagery, day after day, is depressing...~Why don't you ask a girl out?~post
 Ashe~I'm kind of terrified to walk the monastery grounds at night...~Think of it as training for night marches.~pre
-Ashe~I haven't been able to see my brother and sister...~Maybe you should send him some books.~pre
+Ashe~I haven't been able to see my brother and sister...~Maybe you should send him some books.~post
 Dedue~Though I have served His Highness for four years...~Maybe he just likes everything.~pre
 Mercedes~I enjoy a good ghost story but have never seen a ghost...~Maybe you need a ritual to summon one?~pre
 Mercedes~Seeing the cathedral in such a run-down state...~Let's plant flowers to make it more colorful.~post
@@ -28,7 +28,7 @@ Ingrid~Times are hard... My favorite food cart went under...~Maybe the cart will
 Annette~Lectures about strategy or reason require so much focus...~Bring along a snack, just in case.~pre
 Annette~Just thinking about how, even now, someone out there is fighting...~You could assist with my daily tasks if you like.~post
 Felix~Magic is not my forte. Being a gifted swordsman, you'd think using it would come naturally...~Knowing magic will make you a stronger swordsman.~pre
-Felix~I've had this sword for a long time...~Get the new weapon. Give yourself time to train with it.~pre
+Felix~I've had this sword for a long time...~Get the new weapon. Give yourself time to train with it.~post
 Claude~That was a fascinating lecture, but now my brain is fried...~Try going for a stroll around the monastery.~pre
 Claude~I've been thinking it would be nice to throw a big feast...~You should go hunting for what you need in the forest.~post
 Hilda~I hate cleaning my room...~Ask somebody who's good at cleaning.~pre
@@ -42,7 +42,7 @@ Marianne~Soon a day will come when we must all part ways...~The goddess will alw
 Lorenz~The ladies have been giving me the cold shoulder...~Sounds like it's their problem, not yours.~pre
 Lorenz~I have always been confident in my exceptional skill...~Win your battles consistently. Confidence will come.~post
 Leonie~I don't care about being pretty or anything...~They're wrong, pay them no mind.~pre
-Leonie~People call Captain Jeralt the Blade Breaker...~The Executioner.~pre
+Leonie~People call Captain Jeralt the Blade Breaker...~The Executioner.~post
 Lysithea~There's so much to do and never enough time...~Sleeping when you're tired is best for you.~pre
 Lysithea~I've heard rumors about ghosts roaming the monastery...~Let's bring more candles to the halls to brighten things up.~post
 Hanneman~When I ask them to take part in my experiments...~Make the experiment a job and pay them handsomely.~pre
@@ -57,7 +57,7 @@ Flayn~I want to be able to talk to males and make friends...~Do it when he's not
 Flayn~I desperately want to travel to some of the places...~Close your eyes and pretend she's with you.~post
 Shamir~Some people hate spiders or centipedes...~They may all be bugs, but they're such different species.~pre
 Shamir~I prefer to use stealth tactics to assassinate my foes...~Those tactics don't give the enemy a chance to surrender.~post
-Alois~The anniversary of Jeralt's death is coming up...~The best bottle of booze you can find.~pre
+Alois~The anniversary of Jeralt's death is coming up...~The best bottle of booze you can find.~post
 Alois~As a member of the knights, I sometimes travel by ship...~Medicine and magic should help.~post
 Cyril~I'm really happy here, but there's somebody who has decided to take pity on me...~Show them how happy you are working here.~pre
 Cyril~I don't think there's much difference between Almyra and Fodlan...~It's just prejudice towards unknown places. Nothing more.~post

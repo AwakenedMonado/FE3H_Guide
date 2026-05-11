@@ -42,7 +42,14 @@ public class BattalionsFragment extends Fragment {
     private Button bButton;
     private Button aButton;
 
+    private Button typeAllButton;
+    private Button infantryButton;
+    private Button cavalryButton;
+    private Button armoredButton;
+    private Button flyingButton;
+
     private String selectedFilter = "all";
+    private String typeFilter = "all";
     private String searchFilter = "";
     private int sortSelection = 0;
 
@@ -75,6 +82,11 @@ public class BattalionsFragment extends Fragment {
         cButton = layout.findViewById(R.id.battalionsCButton);
         bButton = layout.findViewById(R.id.battalionsBButton);
         aButton = layout.findViewById(R.id.battalionsAButton);
+        typeAllButton = layout.findViewById(R.id.battalionsTypeAllButton);
+        infantryButton = layout.findViewById(R.id.battalionsInfantryButton);
+        cavalryButton = layout.findViewById(R.id.battalionsCavalryButton);
+        armoredButton = layout.findViewById(R.id.battalionsArmoredButton);
+        flyingButton = layout.findViewById(R.id.battalionsFlyingButton);
     }
 
     private void setupComponents() {
@@ -172,16 +184,60 @@ public class BattalionsFragment extends Fragment {
                 filterAndSortList();
             }
         });
+
+        typeAllButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                typeFilter = "all";
+                filterAndSortList();
+            }
+        });
+
+        infantryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                typeFilter = "infantry";
+                filterAndSortList();
+            }
+        });
+
+        cavalryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                typeFilter = "cavalry";
+                filterAndSortList();
+            }
+        });
+
+        armoredButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                typeFilter = "armored";
+                filterAndSortList();
+            }
+        });
+
+        flyingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                typeFilter = "flying";
+                filterAndSortList();
+            }
+        });
     }
 
     private void filterAndSortList() {
         List<Battalion> filtered = new ArrayList<>();
         for (Battalion battalion : battalions) {
-            if (searchFilter.isEmpty() || battalion.getName().toLowerCase().contains(searchFilter)) {
-                if (selectedFilter.equals("all") ||
-                        battalion.getAuthorityLevel().toLowerCase().equals(selectedFilter)) {
-                    filtered.add(battalion);
-                }
+            boolean nameMatch = searchFilter.isEmpty() ||
+                    battalion.getName().toLowerCase().contains(searchFilter);
+            boolean rankMatch = selectedFilter.equals("all") ||
+                    battalion.getAuthorityLevel().toLowerCase().equals(selectedFilter);
+            boolean typeMatch = typeFilter.equals("all") ||
+                    (battalion.getMovementType() != null &&
+                     battalion.getMovementType().toLowerCase().equals(typeFilter));
+            if (nameMatch && rankMatch && typeMatch) {
+                filtered.add(battalion);
             }
         }
 

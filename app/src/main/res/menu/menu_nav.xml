@@ -41,13 +41,18 @@
 
         <item
             android:id="@+id/nav_faculty_training"
-            android:icon="@drawable/ic_menu_classes"
+            android:icon="@drawable/ic_menu_faculty_training"
             android:title="@string/nav_faculty_training" />
 
         <item
             android:id="@+id/nav_lecture_questions"
-            android:icon="@drawable/ic_menu_characters"
+            android:icon="@drawable/ic_menu_lecture"
             android:title="@string/nav_lecture_questions" />
+
+        <item
+            android:id="@+id/nav_weapons"
+            android:icon="@drawable/ic_menu_weapons"
+            android:title="@string/nav_weapons" />
 
         <item android:title="@string/nav_secondary_group">
             <menu>

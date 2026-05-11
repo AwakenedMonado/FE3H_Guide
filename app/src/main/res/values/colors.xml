@@ -28,6 +28,13 @@
     <color name="fixedTextColor">#424245</color>
 
 
+    <!-- Weapon rank colors -->
+    <color name="rank_e">#757575</color>
+    <color name="rank_d">#2E7D32</color>
+    <color name="rank_c">#1565C0</color>
+    <color name="rank_b">#6A1B9A</color>
+    <color name="rank_a">#E65100</color>
+
     <!-- Faction colors -->
     <color name="faction_black_eagles">#B71C1C</color>
     <color name="faction_blue_lions">#1565C0</color>

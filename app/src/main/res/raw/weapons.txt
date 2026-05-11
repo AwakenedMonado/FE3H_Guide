@@ -1,0 +1,168 @@
+Iron Sword|sword|E|5|90|0|1|5|40|
+Iron Sword+|sword|E|6|100|0|1|5|45|
+Training Sword|sword|E|3|100|0|1|4|50|
+Training Sword+|sword|E|3|100|0|1|2|65|
+Rapier|sword|E|7|95|10|1|5|40|Effective against Armoured and Cavalry foes.
+Rapier+|sword|E|9|95|20|1|5|45|Effective against Armoured and Cavalry foes.
+Steel Sword|sword|D|8|85|0|1|10|50|
+Steel Sword+|sword|D|10|85|0|1|10|55|
+Armorslayer|sword|D|8|80|0|1|11|20|Effective against Armoured foes.
+Armorslayer+|sword|D|8|100|5|1|11|25|Effective against Armoured foes.
+Devil Sword|sword|D|13|65|0|1|10|30|Inflicts 10 damage to the wielder after combat.
+Devil Sword+|sword|D|16|65|0|1|10|30|Inflicts 10 damage to the wielder after combat.
+Killing Edge|sword|C|8|85|25|1|10|20|
+Killing Edge+|sword|C|9|85|35|1|10|25|
+Levin Sword|sword|C|9|70|0|1~2|9|25|Deals magic-based damage.
+Levin Sword+|sword|C|9|70|0|1~3|9|30|Deals magic-based damage.
+Venin Edge|sword|C|5|90|0|1|6|20|Inflicts poison.
+Venin Edge+|sword|C|6|100|0|1|6|25|Inflicts poison.
+Silver Sword|sword|B|12|90|0|1|8|30|
+Silver Sword+|sword|B|13|90|0|1|8|40|
+Brave Sword|sword|B|9|75|0|1|12|30|2 consecutive hits when initiating combat.
+Brave Sword+|sword|B|10|85|0|1|12|40|2 consecutive hits when initiating combat.
+Wo Dao|sword|B|8|90|30|1|5|15|
+Wo Dao+|sword|B|9|90|40|1|5|25|
+Cursed Ashiya Sword|sword|B|13|70|40|1|8|15|Inflicts 5 damage to the wielder after combat.
+Cursed Ashiya Sword+|sword|B|14|70|50|1|8|20|Inflicts 5 damage to the wielder after combat.
+Mercurius|sword|A|15|100|10|1|7|40|
+Sword of Seiros|sword|A|11|80|10|1|6|30|Sacred weapon. Heals 50% of damage dealt and restores HP every turn.
+Sword of Begalta|sword|A|12|100|0|1|5|30|Sacred weapon. Restores HP every turn; effect increased with Crest of Riegan.
+Sword of Moralta|sword|A|13|75|25|1|9|30|Sacred weapon. Restores HP every turn; effect increased with Crest of Fraldarius.
+Sword of Zoltan|sword|A|13|90|0|1|9|25|
+Sword of Zoltan+|sword|A|16|90|5|1|9|30|
+Thunderbrand|sword|E|13|70|10|1|7|30|Hero's Relic. 2 consecutive hits; enables Foudroyant for Crest of Charon.
+Blutgang|sword|E|13|80|0|1|7|20|Hero's Relic. Deals magic-based damage; enables Beast Fang for Crest of the Beast.
+Sword of the Creator|sword|E|7|90|0|1~2|9|20|Hero's Relic. Enables Ruptured Heaven for Crest of Flames.
+Sublime Creator Sword|sword|E|15|90|10|1~2|7|20|Enables Sublime Heaven for Crest of Flames.
+Dark Thunderbrand|sword|E|13|70|10|1|7|30|Replica. 2 consecutive hits; enables Foudroyant for Crest of Charon.
+Dark Blutgang|sword|E|13|80|0|1|7|20|Replica. Deals magic-based damage; enables Beast Fang for Crest of the Beast.
+Broken Sword|sword|E|0|30|0|1|20|0|Run out of uses. Can be repaired.
+Rusted Sword|sword|E|0|30|0|1|20|0|Can be forged into Iron, Steel, Silver, or Brave Sword or Mercurius.
+Iron Lance|lance|E|6|80|0|1|6|30|
+Iron Lance+|lance|E|7|90|0|1|6|35|
+Training Lance|lance|E|4|90|0|1|5|50|
+Training Lance+|lance|E|4|90|0|1|3|65|
+Steel Lance|lance|D|9|75|0|1|11|40|
+Steel Lance+|lance|D|11|75|0|1|11|45|
+Javelin|lance|D|2|80|0|1~2|8|30|
+Javelin+|lance|D|3|80|0|1~2|8|40|
+Horseslayer|lance|D|8|70|0|1|13|20|Effective against Cavalry foes.
+Horseslayer+|lance|D|8|90|5|1|13|25|Effective against Cavalry foes.
+Killer Lance|lance|C|9|80|25|1|11|20|
+Killer Lance+|lance|C|10|80|35|1|11|25|
+Short Spear|lance|C|5|75|0|1~2|10|25|
+Short Spear+|lance|C|6|75|0|1~2|10|35|
+Blessed Lance|lance|C|7|80|0|1|14|20|Effective against Monster foes. Restores 10% HP each turn.
+Blessed Lance+|lance|C|9|80|0|1|14|20|Effective against Monster foes. Restores 10% HP each turn.
+Arrow of Indra|lance|C|12|75|0|1~2|14|30|Deals magic-based damage.
+Arrow of Indra+|lance|C|12|75|0|1~3|14|35|Deals magic-based damage.
+Venin Lance|lance|C|6|80|0|1|7|20|Inflicts poison.
+Venin Lance+|lance|C|7|90|0|1|7|25|Inflicts poison.
+Silver Lance|lance|B|13|80|0|1|9|25|
+Silver Lance+|lance|B|14|80|0|1|9|35|
+Brave Lance|lance|B|10|70|0|1|13|25|2 consecutive hits when initiating combat.
+Brave Lance+|lance|B|11|80|0|1|13|35|2 consecutive hits when initiating combat.
+Spear|lance|B|8|70|0|1~2|12|20|
+Spear+|lance|B|9|70|0|1~2|12|30|
+Crescent Sickle|lance|B|10|80|0|1|12|50|
+Crescent Sickle+|lance|B|11|80|10|1|12|55|
+Gradivus|lance|A|17|90|10|1~2|8|30|
+Spear of Assal|lance|A|14|85|10|1|9|30|Sacred weapon. Restores HP every turn. Effective against Cavalry foes. Effect increased with Crest of Cichol.
+Scythe of Sariel|lance|A|10|100|30|1|6|30|The Death Knight's weapon.
+Lance of Zoltan|lance|A|15|80|0|1|10|20|
+Lance of Zoltan+|lance|A|18|80|5|1|10|25|
+Lance of Ruin|lance|E|22|65|20|1|9|20|Hero's Relic. Enables Ruined Sky for Crest of Gautier.
+Areadbhar|lance|E|19|75|10|1|9|20|Hero's Relic. Enables Atrocity for Crest of Blaiddyd.
+Luin|lance|E|17|90|10|1|9|20|Hero's Relic. Enables Fire Quake for Crest of Daphnel.
+Dark Lance of Ruin|lance|E|22|65|20|1|9|20|Replica. Enables Ruined Sky for Crest of Gautier.
+Areadbhar (Replica)|lance|E|19|75|10|1|9|20|Replica. Enables Atrocity for Crest of Blaiddyd.
+Luin (Replica)|lance|E|17|85|10|1|9|20|Replica. Enables Fire Quake for Crest of Daphnel.
+Broken Lance|lance|E|0|30|0|1|20|0|Run out of uses. Can be repaired.
+Rusted Lance|lance|E|0|30|0|1|20|0|Can be forged into Iron, Steel, Silver, or Brave Lance or Gradivus.
+Iron Axe|axe|E|8|70|0|1|7|45|
+Iron Axe+|axe|E|9|80|0|1|7|50|
+Training Axe|axe|E|6|80|0|1|6|50|
+Training Axe+|axe|E|6|80|0|1|4|65|
+Mace|axe|E|6|70|0|1|6|20|Effective against Armoured foes.
+Mace+|axe|E|6|90|5|1|6|25|Effective against Armoured foes.
+Steel Axe|axe|D|11|65|0|1|12|55|
+Steel Axe+|axe|D|13|65|0|1|12|60|
+Hand Axe|axe|D|4|70|0|1~2|10|30|
+Hand Axe+|axe|D|5|70|0|1~2|10|40|
+Hammer|axe|D|10|60|0|1|15|20|Effective against Armoured foes.
+Hammer+|axe|D|10|80|5|1|15|25|Effective against Armoured foes.
+Devil Axe|axe|D|18|60|0|1|14|30|Inflicts 10 damage to the wielder after combat.
+Devil Axe+|axe|D|21|60|0|1|14|30|Inflicts 10 damage to the wielder after combat.
+Killer Axe|axe|C|11|70|25|1|12|20|
+Killer Axe+|axe|C|12|70|35|1|12|25|
+Short Axe|axe|C|8|65|0|1~2|12|25|
+Short Axe+|axe|C|9|65|0|1~2|12|35|
+Venin Axe|axe|C|8|70|0|1|8|20|Inflicts poison.
+Venin Axe+|axe|C|9|80|0|1|8|25|Inflicts poison.
+Silver Axe|axe|B|16|70|0|1|10|30|
+Silver Axe+|axe|B|17|70|0|1|10|40|
+Brave Axe|axe|B|12|60|0|1|14|30|2 consecutive hits when initiating combat.
+Brave Axe+|axe|B|13|70|0|1|14|40|2 consecutive hits when initiating combat.
+Bolt Axe|axe|B|14|60|0|1~2|15|25|Deals magic-based damage.
+Bolt Axe+|axe|B|14|60|0|1~3|15|30|Deals magic-based damage.
+Tomahawk|axe|B|12|60|0|1~2|14|20|
+Tomahawk+|axe|B|13|60|0|1~2|14|30|
+Hauteclere|axe|A|19|80|10|1|12|40|
+Axe of Ukonvasara|axe|A|19|65|20|1|15|30|Sacred weapon. Restores HP every turn. Effective against Armoured foes. Effect increased with Crest of Gloucester.
+Axe of Zoltan|axe|A|17|70|0|1|14|20|Effective against Armoured foes.
+Axe of Zoltan+|axe|A|20|70|5|1|14|25|Effective against Armoured foes.
+Freikugel|axe|E|23|65|10|1|11|20|Hero's Relic. Enables Apocalyptic Flame for Crest of Goneril.
+Crusher|axe|E|18|60|0|1|11|20|Hero's Relic. Deals magic-based damage. Enables Dust for Crest of Dominic.
+Aymr|axe|E|24|60|20|1|11|20|Enables Raging Storm for Crest of Seiros.
+Freikugel (Replica)|axe|E|23|65|10|1|11|20|Replica. Enables Apocalyptic Flame for Crest of Goneril.
+Dark Crusher|axe|E|18|60|0|1|11|20|Replica. Deals magic-based damage. Enables Dust for Crest of Dominic.
+Broken Axe|axe|E|0|30|0|1|20|0|Run out of uses. Can be repaired.
+Rusted Axe|axe|E|0|30|0|1|20|0|Can be forged into Iron, Steel, Silver, or Brave Axe or Hauteclere.
+Iron Bow|bow|E|6|85|0|2|6|40|Effective against Flying foes.
+Iron Bow+|bow|E|7|95|0|2|5|45|Effective against Flying foes.
+Training Bow|bow|E|3|90|0|2|5|50|Effective against Flying foes.
+Training Bow+|bow|E|3|90|0|2|3|65|Effective against Flying foes.
+Steel Bow|bow|D|9|80|0|2|11|50|Effective against Flying foes.
+Steel Bow+|bow|D|11|80|0|2|10|55|Effective against Flying foes.
+Mini Bow|bow|D|4|90|0|1~2|3|50|No effective bonus against Flying foes.
+Mini Bow+|bow|D|6|90|10|1~2|3|55|No effective bonus against Flying foes.
+Killer Bow|bow|C|9|80|25|2|11|20|Effective against Flying foes.
+Killer Bow+|bow|C|10|80|35|2|11|25|Effective against Flying foes.
+Longbow|bow|C|9|70|0|2~3|13|20|Effective against Flying foes.
+Longbow+|bow|C|11|70|0|2~3|13|25|Effective against Flying foes.
+Blessed Bow|bow|C|6|70|0|2|14|20|Effective against Monster foes.
+Blessed Bow+|bow|C|8|70|0|2|14|20|Effective against Monster foes.
+Venin Bow|bow|C|6|85|0|2|6|20|Effective against Flying foes. Inflicts poison.
+Venin Bow+|bow|C|7|95|0|2|6|25|Effective against Flying foes. Inflicts poison.
+Silver Bow|bow|B|12|75|0|2|9|30|Effective against Flying foes.
+Silver Bow+|bow|B|13|75|0|2|8|40|Effective against Flying foes.
+Brave Bow|bow|B|10|70|0|2|13|30|Effective against Flying foes. 2 consecutive hits when initiating combat.
+Brave Bow+|bow|B|11|80|0|2|12|40|Effective against Flying foes. 2 consecutive hits when initiating combat.
+Magic Bow|bow|B|8|75|0|2|9|25|Effective against Flying foes. Deals magic-based damage.
+Magic Bow+|bow|B|8|75|0|2~3|9|30|Effective against Flying foes. Deals magic-based damage.
+Bow of Zoltan|bow|A|13|75|0|2|8|20|Effective against Flying foes.
+Bow of Zoltan+|bow|A|16|75|5|2|8|25|Effective against Flying foes.
+Tathlum Bow|bow|A|13|80|10|2|11|30|Sacred weapon. Effective against Flying foes. Restores HP every turn; effect increased with Crest of Lamine.
+The Inexhaustible|bow|A|11|80|0|2|11|30|Sacred weapon. Effective against Flying foes. 2 consecutive hits. Restores HP every turn; effect increased with Crest of Indech.
+Parthia|bow|A|15|85|10|2|7|40|Effective against Flying foes.
+Failnaught|bow|E|18|75|20|2~3|9|20|Hero's Relic. Effective against Flying foes. Enables Falling Star for Crest of Riegan.
+Failnaught (Replica)|bow|E|18|75|20|2~3|9|20|Replica. Effective against Flying foes. Enables Falling Star for Crest of Riegan.
+Broken Bow|bow|E|0|30|0|1|20|0|Run out of uses. Can be repaired.
+Rusted Bow|bow|E|0|30|0|2|20|0|Can be forged into Iron, Steel, Silver, or Brave Bow or Parthia.
+Iron Gauntlets|gauntlet|E|1|85|5|1|3|50|2 consecutive hits when initiating combat.
+Iron Gauntlets+|gauntlet|E|1|95|5|1|3|60|2 consecutive hits when initiating combat.
+Training Gauntlets|gauntlet|E|0|90|5|1|1|70|2 consecutive hits when initiating combat.
+Training Gauntlets+|gauntlet|E|0|100|5|1|1|90|2 consecutive hits when initiating combat.
+Steel Gauntlets|gauntlet|D|3|80|5|1|5|60|2 consecutive hits when initiating combat.
+Steel Gauntlets+|gauntlet|D|3|85|5|1|5|70|2 consecutive hits when initiating combat.
+Silver Gauntlets|gauntlet|B|4|85|5|1|7|40|2 consecutive hits when initiating combat.
+Silver Gauntlets+|gauntlet|B|4|90|5|1|7|55|2 consecutive hits when initiating combat.
+Killer Knuckles|gauntlet|B|3|80|20|1|5|30|2 consecutive hits when initiating combat.
+Killer Knuckles+|gauntlet|B|3|80|30|1|5|40|2 consecutive hits when initiating combat.
+Dragon Claws|gauntlet|A|4|75|5|1|7|30|2 consecutive hits when initiating combat. Effective against Dragon foes.
+Dragon Claws+|gauntlet|A|4|85|5|1|7|40|2 consecutive hits when initiating combat. Effective against Dragon foes.
+Aura Knuckles|gauntlet|A|2|70|0|1|4|30|2 consecutive hits when initiating combat. Deals magic-based damage.
+Aura Knuckles+|gauntlet|A|2|80|0|1|4|40|2 consecutive hits when initiating combat. Deals magic-based damage.
+Vajra-Mushti|gauntlet|E|7|90|10|1|7|30|2 consecutive hits when initiating combat. Hero's Relic. Enables Eviscerate for Crest of Chevalier.
+Broken Gauntlet|gauntlet|E|0|30|0|1|20|0|Run out of uses. Can be repaired.
+Rusted Gauntlets|gauntlet|E|0|30|0|1|20|0|Can be forged into Iron, Steel, or Silver Gauntlets or Dragon Claws.

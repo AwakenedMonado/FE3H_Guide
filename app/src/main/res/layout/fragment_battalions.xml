@@ -79,6 +79,63 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/battalionsTypeAllButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/aqua_background"
+            android:text="@string/all"
+            android:textColor="@color/mainText"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/battalionsInfantryButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/aqua_background"
+            android:text="@string/battalion_type_infantry"
+            android:textColor="@color/mainText"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/battalionsCavalryButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/aqua_background"
+            android:text="@string/battalion_type_cavalry"
+            android:textColor="@color/mainText"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/battalionsArmoredButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/aqua_background"
+            android:text="@string/battalion_type_armored"
+            android:textColor="@color/mainText"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/battalionsFlyingButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/aqua_background"
+            android:text="@string/battalion_type_flying"
+            android:textColor="@color/mainText"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@color/elevation1"

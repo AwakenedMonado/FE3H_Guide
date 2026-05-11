@@ -18,7 +18,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
 
     private final Context context;
     private static final String DB_NAME = "fe3h";       // name of the database
-    private static final int DB_VERSION = 10;            // version of the database
+    private static final int DB_VERSION = 16;            // version of the database
 
     public FE3HDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -44,6 +44,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         createBattalionsTable(db);
         createFacultyTrainingTable(db);
         createLectureQuestionsTable(db);
+        createWeaponsTable(db);
     }
 
     @Override
@@ -82,6 +83,36 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         }
         if (oldVersion < 10) {
             createLectureQuestionsTable(db);
+        }
+        if (oldVersion < 11) {
+            createWeaponsTable(db);
+        }
+        if (oldVersion < 12) {
+            db.execSQL("UPDATE Supports SET bSupport = REPLACE(bSupport, 'Batlhus:', 'Balthus:') "
+                    + "WHERE character1 = 5 AND character2 = 22");
+        }
+        if (oldVersion < 13) {
+            db.execSQL("UPDATE LectureQuestions SET phase = 'post' "
+                    + "WHERE characterName = 'Alois' AND phase = 'pre' "
+                    + "AND question LIKE '%anniversary%'");
+        }
+        if (oldVersion < 14) {
+            db.execSQL("UPDATE LectureQuestions SET phase = 'post' "
+                    + "WHERE characterName = 'Leonie' AND phase = 'pre' "
+                    + "AND question LIKE '%Blade Breaker%'");
+        }
+        if (oldVersion < 15) {
+            db.execSQL("UPDATE LectureQuestions SET phase = 'post' "
+                    + "WHERE characterName = 'Felix' AND phase = 'pre' "
+                    + "AND question LIKE '%sword for a long time%'");
+            db.execSQL("UPDATE LectureQuestions SET phase = 'post' "
+                    + "WHERE characterName = 'Ashe' AND phase = 'pre' "
+                    + "AND question LIKE '%brother and sister%'");
+        }
+        if (oldVersion < 16) {
+            db.execSQL("UPDATE LectureQuestions SET phase = 'post' "
+                    + "WHERE characterName = 'Caspar' AND phase = 'pre' "
+                    + "AND question LIKE '%nickname%'");
         }
     }
 
@@ -2896,6 +2927,52 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 values.put("bestAnswer", parts[2]);
                 values.put("phase", parts[3]);
                 db.insert("LectureQuestions", null, values);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void createWeaponsTable(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE Weapons ( "
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "name TEXT, "
+                + "type TEXT, "
+                + "lvl TEXT, "
+                + "mt INTEGER, "
+                + "hit INTEGER, "
+                + "crit INTEGER, "
+                + "rng TEXT, "
+                + "wt INTEGER, "
+                + "uses INTEGER, "
+                + "effect TEXT);");
+
+        String line = null;
+        InputStream is = context.getResources().openRawResource(R.raw.weapons);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+                String[] parts = line.split("\\|", -1);
+                if (parts.length < 10) continue;
+                ContentValues values = new ContentValues();
+                values.put("name", parts[0]);
+                values.put("type", parts[1]);
+                values.put("lvl", parts[2]);
+                values.put("mt", Integer.parseInt(parts[3].trim()));
+                values.put("hit", Integer.parseInt(parts[4].trim()));
+                values.put("crit", Integer.parseInt(parts[5].trim()));
+                values.put("rng", parts[6]);
+                values.put("wt", Integer.parseInt(parts[7].trim()));
+                values.put("uses", Integer.parseInt(parts[8].trim()));
+                values.put("effect", parts[9]);
+                db.insert("Weapons", null, values);
             }
         } catch (IOException e) {
             e.printStackTrace();

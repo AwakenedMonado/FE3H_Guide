@@ -3,6 +3,8 @@ package com.xiana.fe3hguide.supports;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,7 +59,18 @@ public class SupportsTextActivity extends AppCompatActivity {
         String char1Portrait = intent.getStringExtra("char1Portrait");
         String char2Portrait = intent.getStringExtra("char2Portrait");
 
-        ((TextView) findViewById(R.id.textView_support_rank)).setText(rank);
+        int rankDrawableRes = getRankDrawable(rank);
+        ImageView rankImage = (ImageView) findViewById(R.id.imageView_support_rank);
+        TextView rankText = (TextView) findViewById(R.id.textView_support_rank);
+        if (rankDrawableRes != 0) {
+            rankImage.setImageResource(rankDrawableRes);
+            rankImage.setVisibility(View.VISIBLE);
+            rankText.setVisibility(View.GONE);
+        } else {
+            rankText.setText(rank);
+            rankText.setVisibility(View.VISIBLE);
+            rankImage.setVisibility(View.GONE);
+        }
 
         List<SupportLine> lines = parseDialogue(sanitize(rawText), char1Name, char2Name);
 
@@ -169,10 +182,14 @@ public class SupportsTextActivity extends AppCompatActivity {
         return false;
     }
 
-    // Standalone route tag: its own line, no colon, no parens, matches a route keyword
+    // Standalone route tag: its own line with no colon, either bare ("Azure Moon") or
+    // fully parenthesized ("(If conversation takes place before Lonato's death)")
     private boolean isStandaloneRouteTag(String segment) {
-        if (segment.startsWith("(") || segment.contains(":")) return false;
-        return isRouteTag(segment);
+        if (segment.contains(":")) return false;
+        if (!segment.startsWith("(")) return isRouteTag(segment);
+        // Fully-parenthesized condition tag — entire segment wrapped in ()
+        if (segment.endsWith(")")) return isRouteTag(segment.substring(1, segment.length() - 1));
+        return false;
     }
 
     private String detectSpeaker(String line, String char1, String char2) {
@@ -199,6 +216,20 @@ public class SupportsTextActivity extends AppCompatActivity {
         if (line.startsWith("Choice 2: ")) return "(2) " + line.substring("Choice 2: ".length());
         if (line.startsWith("Choice 3: ")) return "(3) " + line.substring("Choice 3: ".length());
         return line;
+    }
+
+    private int getRankDrawable(String rank) {
+        if (rank == null) return 0;
+        switch (rank) {
+            case "C Support":  return R.drawable.csupport;
+            case "C+ Support": return R.drawable.cplusupport;
+            case "B Support":  return R.drawable.bsupport;
+            case "B+ Support": return R.drawable.bplusupport;
+            case "A Support":  return R.drawable.asupport;
+            case "A+ Support": return R.drawable.aplusupport;
+            case "S Support":  return R.drawable.ssupport;
+            default:           return 0;
+        }
     }
 
     @Override

@@ -12,6 +12,7 @@ import com.xiana.fe3hguide.model.CombatArtClassMastery;
 import com.xiana.fe3hguide.model.FacultyTrainer;
 import com.xiana.fe3hguide.model.Gambit;
 import com.xiana.fe3hguide.model.LectureQuestion;
+import com.xiana.fe3hguide.model.Weapon;
 import com.xiana.fe3hguide.model.InGameClass;
 import com.xiana.fe3hguide.model.Spell;
 import com.xiana.fe3hguide.model.TeaTimeInfo;
@@ -32,6 +33,7 @@ public class Facade {
     private static DAOBattalions daoBattalions;
     private static DAOFacultyTraining daoFacultyTraining;
     private static DAOLectureQuestions daoLectureQuestions;
+    private static DAOWeapons daoWeapons;
 
     private Facade(){
     }
@@ -49,6 +51,7 @@ public class Facade {
             daoBattalions = new DAOBattalions(db);
             daoFacultyTraining = new DAOFacultyTraining(db);
             daoLectureQuestions = new DAOLectureQuestions(db);
+            daoWeapons = new DAOWeapons(db);
 
             instance = new Facade();
         }
@@ -147,6 +150,9 @@ public class Facade {
 
     /** DAOLectureQuestions methods **/
     public List<LectureQuestion> getLectureQuestions() { return daoLectureQuestions.getLectureQuestions(); }
+
+    /** DAOWeapons methods **/
+    public List<Weapon> getWeapons() { return daoWeapons.getWeapons(); }
 
     /** DAOTeaTime methods **/
     public ArrayList<String> getAllNamesButByleth(){
