@@ -131,6 +131,17 @@ public class SupportsTextActivity extends AppCompatActivity {
                 }
             }
 
+            // "Update: text" = game-patch revision of the previous speaker's line
+            if (processedSegment.startsWith("Update:") && currentSpeaker != null) {
+                String text = currentText.toString().trim();
+                if (!text.isEmpty()) {
+                    result.add(new SupportLine(currentSpeaker, text, currentRouteTag));
+                }
+                currentText = new StringBuilder(processedSegment.substring("Update:".length()).trim());
+                currentRouteTag = "Updated";
+                continue;
+            }
+
             String speaker = detectSpeaker(processedSegment, char1, char2);
             if (speaker != null) {
                 if (currentSpeaker != null) {

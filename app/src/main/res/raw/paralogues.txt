@@ -1,0 +1,27 @@
+War for the Weak|Dedue|Azure Moon|Ch. 6-11|Duscur Heavy Soldiers battalion. Completing this prevents Dedue from permanently dying at the timeskip.|1
+The Forgotten|Sylvain|All|Ch. 7-11|Lance of Ruin (Relic); Gautier Knights battalion|1
+Land of the Golden Deer|Lorenz|All|Ch. 7-11|Thyrsus (Relic); Gloucester Knights battalion|1
+Rumored Nuptials|Dorothea, Ingrid|All|Ch. 7-11|Luin (Relic) if Ingrid recruited; Goddess Ring if Dorothea recruited|1
+Sword and Shield of Seiros|Alois, Shamir|All|Ch. 7-11|Holy Knights of Seiros battalion; Seiros Archers battalion; Seraph Robe if enemies occupy defended area fewer than 4 turns|1
+Black Market Scheme|Balthus, Hapi|All|Ch. 7-11|Vajra-Mushti (Relic); Leicester Dicers Corps battalion; Timotheos Magi Corps battalion. Requires Expansion Pass.|1
+Tales of the Red Canyon|Byleth|All|Ch. 8-10|Knowledge Gem; +3 Divine Pulse charges. All enemies are monsters. Tight window — expires end of Ch. 10.|1
+Oil and Water|Hanneman, Manuela|All|Ch. 8-11|Macuil Evil Repelling Co. battalion (Manuela); Indech Sword Fighters battalion (Hanneman)|1
+True Chivalry|Felix|All|Ch. 8-11|Fraldarius Soldiers battalion; Aegis Shield if all 5 villagers survive|1
+Death Toll|Raphael, Ignatz|All|Ch. 8-11|Leicester Mercenaries battalion (Raphael); Victor Private Military battalion (Ignatz)|1
+A Cursed Relic|Yuri, Constance|All|Ch. 8-11|Fetters of Dromi (Relic); Mockingbird's Thieves battalion (Yuri); Nuvelle Fliers Corps battalion (Constance). Requires Expansion Pass.|1
+An Ocean View|Flayn|All|Ch. 9-11|Spear of Assal (Relic); Caduceus Staff; Cichol Wyvern Co. battalion; Cethleann Monks battalion. Desert map — movement penalty for non-fliers.|1
+Falling Short of Heaven|Ashe, Catherine|All|Ch. 9-11|Critical Ring; Shoes of the Wind if Rhea does not enter combat; Gaspard Knights battalion (Ashe)|1
+The Secret Merchant|Anna|Azure Moon, Verdant Wind|Ch. 9-11|Secret Transport Force battalion. Requires Expansion Pass. Not available on Silver Snow.|1
+Dividing the World|Hilda|Azure Moon, Verdant Wind, Silver Snow|Ch. 10-18|Freikugel (Relic); Goneril Valkyries battalion; Hexlock Shield if all Goneril soldiers survive. Post-timeskip: Cyril also required.|1
+The Secret Merchant|Anna|Crimson Flower|Ch. 13-17|Secret Transport Force battalion. Requires Expansion Pass. Crimson Flower Part 2 version only.|2
+Weathervanes of Fodlan|Annette, Gilbert|Azure Moon|Ch. 14-18|Crusher (Relic); School of Sorcery Soldiers battalion|2
+Foreign Land and Sky|Petra, Bernadetta|All|Ch. 15-18|Brigid Hunters battalion; Brigid Mercenaries battalion. Enemy composition differs by route.|2
+The Face Beneath|Mercedes, Caspar|Azure Moon, Verdant Wind, Silver Snow|Ch. 15-16 (SS) / 15-17 (VW) / 15-19 (AM)|Rafail Gem; Scythe of Sariel if Caspar personally defeats the Death Knight; Dark Seal from Death Knight|2
+Legend of the Lake|Leonie, Linhardt|All|Ch. 15-22|The Inexhaustible (bow); Hevring Prayer Troops battalion; Sauin Militia battalion. Fog of war. On CF, expires early if Seteth and Flayn are both killed in Ch. 15.|2
+Darkness Beneath the Earth|Hubert|Crimson Flower|Ch. 15-17|Arrow of Indra if 3+ allied Dark Bishops survive; Seraph Robe|2
+Forgotten Hero|Marianne|All|Ch. 15-22|Blutgang (Relic); Edmund Troops battalion. Fog of war. The Wandering Beast won't attack Marianne unless allies enter the central clearing.|2
+Insurmountable|Edelgard|Crimson Flower|Ch. 15-17|Holst's Chosen battalion; Aurora Shield (steal from Nader). Constant Wyvern Rider reinforcements each turn.|2
+Eternal Guardian|C support with Rhea|Azure Moon, Verdant Wind, Silver Snow|Ch. 16-21|Seiros Shield|2
+Retribution|Ferdinand, Lysithea|Azure Moon, Verdant Wind, Silver Snow|Ch. 17-21|Lance of Zoltan + Ochain Shield if all villages saved; Aegir Astral Knights battalion; Ordelia Sorcery Co. battalion|2
+The Sleeping Sand Legend|Claude|Verdant Wind|Ch. 17-21|Sword of Begalta|2
+The Silver Maiden|Dimitri|Azure Moon|Ch. 19-21|Blue Lion Knights battalion|2

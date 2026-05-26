@@ -41,6 +41,13 @@ public class WeaponsFragment extends Fragment {
         this.fc = fc;
     }
 
+    public WeaponsFragment(Facade fc, String initialSearch) {
+        this.fc = fc;
+        if (initialSearch != null) {
+            this.searchFilter = initialSearch.toLowerCase().trim();
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -78,6 +85,10 @@ public class WeaponsFragment extends Fragment {
         sortSpinner.setAdapter(sortAdapter);
 
         applyFilterAndSort();
+        if (!searchFilter.isEmpty()) {
+            searchView.setQuery(searchFilter, false);
+            searchView.clearFocus();
+        }
     }
 
     private void addListeners() {

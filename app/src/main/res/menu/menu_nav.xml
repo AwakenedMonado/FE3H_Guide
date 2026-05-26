@@ -54,6 +54,11 @@
             android:icon="@drawable/ic_menu_weapons"
             android:title="@string/nav_weapons" />
 
+        <item
+            android:id="@+id/nav_paralogues"
+            android:icon="@drawable/ic_menu_paralogues"
+            android:title="@string/nav_paralogues" />
+
         <item android:title="@string/nav_secondary_group">
             <menu>
                 <group android:checkableBehavior="single">

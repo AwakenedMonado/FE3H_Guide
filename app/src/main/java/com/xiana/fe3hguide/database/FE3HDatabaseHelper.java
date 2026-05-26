@@ -18,7 +18,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
 
     private final Context context;
     private static final String DB_NAME = "fe3h";       // name of the database
-    private static final int DB_VERSION = 16;            // version of the database
+    private static final int DB_VERSION = 18;            // version of the database
 
     public FE3HDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -45,6 +45,7 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
         createFacultyTrainingTable(db);
         createLectureQuestionsTable(db);
         createWeaponsTable(db);
+        createParaloguesTable(db);
     }
 
     @Override
@@ -113,6 +114,13 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
             db.execSQL("UPDATE LectureQuestions SET phase = 'post' "
                     + "WHERE characterName = 'Caspar' AND phase = 'pre' "
                     + "AND question LIKE '%nickname%'");
+        }
+        if (oldVersion < 17) {
+            createParaloguesTable(db);
+        }
+        if (oldVersion < 18) {
+            db.execSQL("DROP TABLE IF EXISTS Paralogues");
+            createParaloguesTable(db);
         }
     }
 
@@ -2973,6 +2981,44 @@ public class FE3HDatabaseHelper extends SQLiteOpenHelper {
                 values.put("uses", Integer.parseInt(parts[8].trim()));
                 values.put("effect", parts[9]);
                 db.insert("Weapons", null, values);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void createParaloguesTable(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE Paralogues ( "
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "name TEXT, "
+                + "characters TEXT, "
+                + "routes TEXT, "
+                + "chapterWindow TEXT, "
+                + "rewards TEXT, "
+                + "part INTEGER);");
+
+        String line = null;
+        InputStream is = context.getResources().openRawResource(R.raw.paralogues);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+                String[] parts = line.split("\\|", 6);
+                if (parts.length < 6) continue;
+                ContentValues values = new ContentValues();
+                values.put("name", parts[0]);
+                values.put("characters", parts[1]);
+                values.put("routes", parts[2]);
+                values.put("chapterWindow", parts[3]);
+                values.put("rewards", parts[4]);
+                values.put("part", Integer.parseInt(parts[5].trim()));
+                db.insert("Paralogues", null, values);
             }
         } catch (IOException e) {
             e.printStackTrace();

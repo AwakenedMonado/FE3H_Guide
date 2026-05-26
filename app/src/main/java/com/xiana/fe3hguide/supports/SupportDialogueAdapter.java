@@ -84,7 +84,7 @@ public class SupportDialogueAdapter extends RecyclerView.Adapter<RecyclerView.Vi
         h.text.setText(line.getText());
 
         // Resolve portrait
-        String portraitName = resolvePortrait(line.getSpeaker());
+        String portraitName = resolvePortrait(context, line.getSpeaker());
         if (portraitName != null) {
             int resId = context.getResources().getIdentifier(
                     portraitName, "drawable", context.getPackageName());
@@ -105,11 +105,15 @@ public class SupportDialogueAdapter extends RecyclerView.Adapter<RecyclerView.Vi
         }
     }
 
-    private String resolvePortrait(String speaker) {
+    private String resolvePortrait(Context context, String speaker) {
         if (speaker.equals(char1Name)) return char1Portrait;
         if (speaker.equals(char2Name)) return char2Portrait;
-        if (speaker.equalsIgnoreCase("Gatekeeper")) return "gatekeeper";
-        if (speaker.equalsIgnoreCase("Rogue")) return "rogue";
+        // Try to find a portrait drawable for any named character (e.g. Anna, Flayn, Dimitri
+        // appearing as guest NPCs in another pair's support conversation)
+        String key = speaker.toLowerCase().replace(" ", "_");
+        if (key.equals("byleth")) key = "mbyleth";
+        int resId = context.getResources().getIdentifier(key, "drawable", context.getPackageName());
+        if (resId != 0) return key;
         return "mystery_man";
     }
 
@@ -123,6 +127,8 @@ public class SupportDialogueAdapter extends RecyclerView.Adapter<RecyclerView.Vi
             return ContextCompat.getColor(context, R.color.faction_golden_deer);
         } else if (tag.contains("Silver Snow") || tag.contains("Church")) {
             return ContextCompat.getColor(context, R.color.faction_church);
+        } else if (tag.contains("Updated")) {
+            return ContextCompat.getColor(context, R.color.green_tea);
         } else {
             return ContextCompat.getColor(context, R.color.faction_ashen_wolves);
         }

@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.xiana.fe3hguide.model.Ability;
+import com.xiana.fe3hguide.model.Paralogue;
 import com.xiana.fe3hguide.model.Battalion;
 import com.xiana.fe3hguide.model.Character;
 import com.xiana.fe3hguide.model.CombatArt;
@@ -34,6 +35,7 @@ public class Facade {
     private static DAOFacultyTraining daoFacultyTraining;
     private static DAOLectureQuestions daoLectureQuestions;
     private static DAOWeapons daoWeapons;
+    private static DAOParalogues daoParalogues;
 
     private Facade(){
     }
@@ -52,6 +54,7 @@ public class Facade {
             daoFacultyTraining = new DAOFacultyTraining(db);
             daoLectureQuestions = new DAOLectureQuestions(db);
             daoWeapons = new DAOWeapons(db);
+            daoParalogues = new DAOParalogues(db);
 
             instance = new Facade();
         }
@@ -153,6 +156,9 @@ public class Facade {
 
     /** DAOWeapons methods **/
     public List<Weapon> getWeapons() { return daoWeapons.getWeapons(); }
+
+    /** DAOParalogues methods **/
+    public List<Paralogue> getParalogues() { return daoParalogues.getParalogues(); }
 
     /** DAOTeaTime methods **/
     public ArrayList<String> getAllNamesButByleth(){

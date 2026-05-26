@@ -57,6 +57,13 @@ public class BattalionsFragment extends Fragment {
         this.fc = fc;
     }
 
+    public BattalionsFragment(Facade fc, String initialSearch) {
+        this.fc = fc;
+        if (initialSearch != null) {
+            this.searchFilter = initialSearch.toLowerCase().trim();
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -68,6 +75,11 @@ public class BattalionsFragment extends Fragment {
         initComponents(layout);
         setupComponents();
         addListeners();
+        if (!searchFilter.isEmpty()) {
+            searchView.setQuery(searchFilter, false);
+            searchView.clearFocus();
+            filterAndSortList();
+        }
 
         return layout;
     }

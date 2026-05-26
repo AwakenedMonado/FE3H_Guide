@@ -154,6 +154,7 @@
     <string name="enable_dark_mode">Enable Dark Mode</string>
     <string name="choose_home">Select default tab</string>
 
+    <string name="nav_paralogues">Paralogues</string>
     <string name="nav_battalions">Battalions</string>
     <string name="nav_faculty_training">Faculty Training</string>
     <string name="nav_lecture_questions">Lecture Questions</string>
@@ -207,6 +208,13 @@
     <string name="battalion_rank_a">A</string>
     <string name="movement_type">Movement</string>
     <string name="sort_label">Sort</string>
+    <string-array name="paralogue_route_options">
+        <item>All Routes</item>
+        <item>Azure Moon</item>
+        <item>Crimson Flower</item>
+        <item>Verdant Wind</item>
+        <item>Silver Snow</item>
+    </string-array>
     <string-array name="battalion_sort_options">
         <item>Alphabetical</item>
         <item>Authority Level</item>
